@@ -16,13 +16,13 @@ export const projects: ProjetBySection = {
                 "PyTMX",
                 "PyScroll"
             ],
-            thumbnail: { path: "@/assets/zelda/thumbnail.png", alt: "Image miniature du menu" },
+            thumbnail: { path: "/assets/zelda/thumbnail.png", alt: "Image miniature du menu" },
             images: [
-                { path: "@/assets/zelda/1.png", alt: "Image du jeu" },
-                { path: "@/assets/zelda/2.png", alt: "Image d'une animations" },
-                { path: "@/assets/zelda/3.png", alt: "Image des objets" }
+                { path: "/assets/zelda/1.png", alt: "Image du jeu" },
+                { path: "/assets/zelda/2.png", alt: "Image d'une animations" },
+                { path: "/assets/zelda/3.png", alt: "Image des objets" }
             ],
-            video: { path: "@/assets/zelda/video.mp4", alt: "Vidéo de démonstration" }
+            video: { path: "/assets/zelda/video.mp4", alt: "Vidéo de démonstration" }
         },
         { // Celeste
             id: 2,
@@ -37,13 +37,13 @@ export const projects: ProjetBySection = {
                 "Python",
                 "Pygame"
             ],
-            thumbnail: { path: "@/assets/celeste/thumbnail.png", alt: "Image miniature du menu" },
+            thumbnail: { path: "/assets/celeste/thumbnail.png", alt: "Image miniature du menu" },
             images: [
-                { path: "@/assets/celeste/1.png", alt: "Image du jeu" },
-                { path: "@/assets/celeste/2.png", alt: "Image du jeu" },
-                { path: "@/assets/celeste/3.png", alt: "Image de la fin" }
+                { path: "/assets/celeste/1.png", alt: "Image du jeu" },
+                { path: "/assets/celeste/2.png", alt: "Image du jeu" },
+                { path: "/assets/celeste/3.png", alt: "Image de la fin" }
             ],
-            video: { path: "@/assets/celeste/video.mp4", alt: "Vidéo de démonstration" }
+            video: { path: "/assets/celeste/video.mp4", alt: "Vidéo de démonstration" }
         },
         { // G.E.R.A.R.D
             id: 3,
@@ -60,7 +60,7 @@ export const projects: ProjetBySection = {
                 "FastAPI",
                 "Ollama"
             ],
-            thumbnail: { path: "@/assets/gerard/thumbnail.png", alt: "Aucune image disponible" },
+            thumbnail: { path: "/assets/gerard/thumbnail.png", alt: "Aucune image disponible" },
             images: []
         }
     ],
@@ -80,11 +80,11 @@ export const projects: ProjetBySection = {
                 "Cloudflare",
                 "KV Namespace"
             ],
-            thumbnail: { path: "@/assets/pageweaver/thumbnail.png", alt: "Image miniature du site" },
+            thumbnail: { path: "/assets/pageweaver/thumbnail.png", alt: "Image miniature du site" },
             images: [
-                { path: "@/assets/pageweaver/1.png", alt: "Image du site" },
-                { path: "@/assets/pageweaver/2.png", alt: "Image du site" },
-                { path: "@/assets/pageweaver/3.png", alt: "Image du site" }
+                { path: "/assets/pageweaver/1.png", alt: "Image du site" },
+                { path: "/assets/pageweaver/2.png", alt: "Image du site" },
+                { path: "/assets/pageweaver/3.png", alt: "Image du site" }
             ]
         },
         { // Filmbook
@@ -101,10 +101,10 @@ export const projects: ProjetBySection = {
                 "React Router",
                 "Cloudflare"
             ],
-            thumbnail: { path: "@/assets/filmbook/thumbnail.png", alt: "Image miniature du site" },
+            thumbnail: { path: "/assets/filmbook/thumbnail.png", alt: "Image miniature du site" },
             images: [
-                { path: "@/assets/filmbook/1.png", alt: "Image de la page d'un film" },
-                { path: "@/assets/filmbook/2.png", alt: "Image de la page 404" }
+                { path: "/assets/filmbook/1.png", alt: "Image de la page d'un film" },
+                { path: "/assets/filmbook/2.png", alt: "Image de la page 404" }
             ]
         },
         { // SiteLink
@@ -121,11 +121,11 @@ export const projects: ProjetBySection = {
                 "CSS",
                 "JavaScript"
             ],
-            thumbnail: { path: "@/assets/sitelink/thumbnail.png", alt: "Image miniature du site" },
+            thumbnail: { path: "/assets/sitelink/thumbnail.png", alt: "Image miniature du site" },
             images: [
-                { path: "@/assets/sitelink/1.png", alt: "Image du site" },
-                { path: "@/assets/sitelink/2.png", alt: "Image du site" },
-                { path: "@/assets/sitelink/3.png", alt: "Image du site" }
+                { path: "/assets/sitelink/1.png", alt: "Image du site" },
+                { path: "/assets/sitelink/2.png", alt: "Image du site" },
+                { path: "/assets/sitelink/3.png", alt: "Image du site" }
             ]
         },
         { // Kanban
@@ -145,11 +145,11 @@ export const projects: ProjetBySection = {
                 "Cloudflare",
                 "Railway"
             ],
-            thumbnail: { path: "@/assets/kanban/thumbnail.png", alt: "Image miniature du site" },
+            thumbnail: { path: "/assets/kanban/thumbnail.png", alt: "Image miniature du site" },
             images: [
-                { path: "@/assets/kanban/1.png", alt: "Image du site" },
-                { path: "@/assets/kanban/2.png", alt: "Image du site" },
-                { path: "@/assets/kanban/3.png", alt: "Image du site" }
+                { path: "/assets/kanban/1.png", alt: "Image du site" },
+                { path: "/assets/kanban/2.png", alt: "Image du site" },
+                { path: "/assets/kanban/3.png", alt: "Image du site" }
             ]
         },
     ],
@@ -166,11 +166,11 @@ export const projects: ProjetBySection = {
                 "Java",
                 "Minecraft Forge"
             ],
-            thumbnail: { path: "@/assets/minecraft/thumbnail.png" },
+            thumbnail: { path: "/assets/minecraft/thumbnail.png" },
             images: [
-                { path: "@/assets/minecraft/1.png", alt: "Image des détails du mod" },
-                { path: "@/assets/minecraft/2.png", alt: "Image en jeu du mod" },
-                { path: "@/assets/minecraft/3.png", alt: "Image en jeu du mod" }
+                { path: "/assets/minecraft/1.png", alt: "Image des détails du mod" },
+                { path: "/assets/minecraft/2.png", alt: "Image en jeu du mod" },
+                { path: "/assets/minecraft/3.png", alt: "Image en jeu du mod" }
             ]
         },
         { // Postmanman
@@ -186,11 +186,11 @@ export const projects: ProjetBySection = {
                 "Java",
                 "JavaFX"
             ],
-            thumbnail: { path: "@/assets/postmanman/thumbnail.png" },
+            thumbnail: { path: "/assets/postmanman/thumbnail.png" },
             images: [
-                { path: "@/assets/postmanman/1.png", alt: "Image du logiciel en action" },
-                { path: "@/assets/postmanman/2.png", alt: "Image du logiciel en action" },
-                { path: "@/assets/postmanman/3.png", alt: "Image du logiciel en action" }
+                { path: "/assets/postmanman/1.png", alt: "Image du logiciel en action" },
+                { path: "/assets/postmanman/2.png", alt: "Image du logiciel en action" },
+                { path: "/assets/postmanman/3.png", alt: "Image du logiciel en action" }
             ]
         }
     ],
@@ -209,11 +209,11 @@ export const projects: ProjetBySection = {
                 "Node.js",
                 "Railway"
             ],
-            thumbnail: { path: "@/assets/baker-eat/thumbnail.png", alt: "Image d'accueil de l'application" },
+            thumbnail: { path: "/assets/baker-eat/thumbnail.png", alt: "Image d'accueil de l'application" },
             images: [
-                { path: "@/assets/baker-eat/1.png", alt: "Image de l'application" },
-                { path: "@/assets/baker-eat/2.png", alt: "Image de l'application" },
-                { path: "@/assets/baker-eat/3.png", alt: "Image de l'application" }
+                { path: "/assets/baker-eat/1.png", alt: "Image de l'application" },
+                { path: "/assets/baker-eat/2.png", alt: "Image de l'application" },
+                { path: "/assets/baker-eat/3.png", alt: "Image de l'application" }
             ]
         },
         { // Masamune 
@@ -230,11 +230,11 @@ export const projects: ProjetBySection = {
                 "C#",
                 "Unity"
             ],
-            thumbnail: { path: "@/assets/masamune/thumbnail.png", alt: "Image d'accueil de l'application" },
+            thumbnail: { path: "/assets/masamune/thumbnail.png", alt: "Image d'accueil de l'application" },
             images: [
-                { path: "@/assets/masamune/1.png", alt: "Image de l'application" },
-                { path: "@/assets/masamune/2.png", alt: "Image de l'application" },
-                { path: "@/assets/masamune/3.png", alt: "Image de l'application" }
+                { path: "/assets/masamune/1.png", alt: "Image de l'application" },
+                { path: "/assets/masamune/2.png", alt: "Image de l'application" },
+                { path: "/assets/masamune/3.png", alt: "Image de l'application" }
             ]
         }
     ]
