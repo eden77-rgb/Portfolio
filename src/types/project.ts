@@ -26,6 +26,7 @@ export type Stack =
     | "Minecraft Forge"
     | "Batch"
     | "Flutter"
+    | "MySQL"
     | "C#"
     | "Unity"
 

@@ -207,6 +207,7 @@ export const projects: ProjetBySection = {
             stacks: [
                 "Flutter",
                 "Node.js",
+                "MySQL",
                 "Railway"
             ],
             thumbnail: { path: "/assets/baker-eat/thumbnail.png", alt: "Image d'accueil de l'application" },
