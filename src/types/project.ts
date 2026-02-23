@@ -35,16 +35,36 @@ export type Media = {
     alt?: string
 }
 
+export type State = 
+    | "Bientot"
+    | "En cours"
+    | "Fini"
+    | "Amélioration"
+
+export type Feature = {
+    content: string
+}
+
+export type Defi = {
+    content: string
+}
+
 export interface Project {
     id: number,
     title: string,
+    accroche: string,
     description: string,
+    date: number,
+    state: State,
     github: string,
     live?: string,
     stacks: Stack[],
     thumbnail: Media,
     images: Media[],
     video?: Media
+    features: Feature[],
+    defi: Defi[]
+    
 }
 
 export type Section = "Python" | "Technologie web" | "Java" | "Autre"
