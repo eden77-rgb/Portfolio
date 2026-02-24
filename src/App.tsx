@@ -1,9 +1,16 @@
-import { MainPage } from "./pages"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { MainPage, ProjectPage } from "./pages"
+
 
 function App() {
     return (
         <>
-            <MainPage />
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<MainPage />} />
+                    <Route path="/project/:id" element={<ProjectPage />} />
+                </Routes>
+            </BrowserRouter>
         </>
     )
 }
