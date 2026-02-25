@@ -49,7 +49,7 @@ export type Defi = {
     content: string
 }
 
-export interface Project {
+export type Project = {
     id: number,
     title: string,
     accroche: string,
