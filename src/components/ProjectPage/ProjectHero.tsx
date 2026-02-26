@@ -5,7 +5,7 @@ import { Calendar } from "lucide-react"
 
 const ProjectHero = ({ projet }: ProjectHeroProps) => {
     return (
-        <div className="relative h-[80vh]">
+        <div className="relative h-[80vh] flex flex-col justify-end">
             <div className="absolute inset-0">
                 <img
                     src={projet.thumbnail.path}
@@ -15,13 +15,13 @@ const ProjectHero = ({ projet }: ProjectHeroProps) => {
                 <div className="absolute inset-0 bg-linear-to-b from-black/20 via-black/60 to-black/95" />
             </div>
 
-            <div className="absolute top-[45%] left-0 right-0 px-12 md:px-20 lg:px-28 pb-16">
+            <div className="relative z-10 px-6 md:px-20 lg:px-28 pb-16 pt-32">
                 <div className="flex items-center gap-2 text-emerald-400 text-sm font-medium mb-6">
                     <Calendar size={14} />
                     <p>{projet.date}</p>
                 </div>
 
-                <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-[1.1] pb-2 mb-6 bg-linear-to-r from-emerald-400 via-teal-500 to-lime-400 bg-clip-text text-transparent">
+                <h1 className="text-4xl md:text-7xl lg:text-8xl font-bold leading-[1.1] pb-2 mb-6 bg-linear-to-r from-emerald-400 via-teal-500 to-lime-400 bg-clip-text text-transparent">
                     {projet.title}
                 </h1>
 
