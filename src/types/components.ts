@@ -21,3 +21,11 @@ export type ProjectCardProps = {
 export type ProjectStackProps = {
     stack: Stack
 }
+
+export type ProjectHeroProps = {
+    projet: Project
+}
+
+export type ProjectDescriptionProps = {
+    projet: Project
+}

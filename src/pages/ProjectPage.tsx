@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom"
 import { projects } from "@/data/projects"
 import type { Project } from "@/types"
+import { ProjectHero } from "@/components/ProjectPage"
 
 export function ProjectPage() {
     const { id } = useParams()
@@ -47,7 +48,13 @@ export function ProjectPage() {
 
     return (
         <>
-            <h1>ProjetPage {project.title}</h1>
+        {/* 
+            <div>
+                <img src={project.thumbnail.path} alt={project.thumbnail.alt ? project.thumbnail.alt : ""} />
+            </div>
+        */}
+
+            <ProjectHero projet={project} />
         </>
     )
 }

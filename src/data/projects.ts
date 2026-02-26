@@ -378,7 +378,7 @@ export const projects: ProjetBySection = {
             ]
         },
         { // Masamune 
-            id: 9,
+            id: 11,
             title: "Masamune Fighting",
             accroche: "Jeu de combat 1v1 local inspiré des titres type Smash, avec écran partagé.",
             description: `Masamune Fighting est un jeu de combat 1v1 en local, inspiré de l'univers des jeux type Smash, 

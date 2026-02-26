@@ -1,5 +1,5 @@
 import type { ProjectCardProps } from "@/types";
-import ProjectStack from "./ProjectStack";
+import { ProjectStack } from "@/components/common";
 import { Link } from "react-router-dom";
 
 const ProjectCard = ({ projet }: ProjectCardProps) => {
