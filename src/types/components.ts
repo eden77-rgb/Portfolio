@@ -27,5 +27,5 @@ export type ProjectHeroProps = {
 }
 
 export type ProjectDescriptionProps = {
-    projet: Project
+    description: string
 }
