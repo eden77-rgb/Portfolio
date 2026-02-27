@@ -3,7 +3,7 @@ import type { ProjectImagesProps } from "@/types"
 const ProjectImages = ({ images }: ProjectImagesProps) => {
     return (
         <div className="px-12 md:px-20 lg:px-28 pb-16">
-            <h2 className="text-2xl md:text-3xl font-bold text-emerald-400 mb-6">
+            <h2 className="text-2xl md:text-3xl font-bold text-lime-400 mb-6">
                 Galerie d'images
             </h2>
 
@@ -13,7 +13,7 @@ const ProjectImages = ({ images }: ProjectImagesProps) => {
                         <img
                             src={image.path}
                             alt={image.alt ? image.alt : ""}
-                            className="w-full h-auto max-h-125 object-contain rounded-xl shadow-lg border border-emerald-500/20"
+                            className="w-full h-auto max-h-125 object-contain rounded-xl shadow-lg border border-lime-500/20"
                         />
                     </div>
                 ))}

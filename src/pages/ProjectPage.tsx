@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom"
 import { projects } from "@/data/projects"
 import type { Project } from "@/types"
-import { ProjectVideo, ProjectDescription, ProjectHero, ProjectImages } from "@/components/ProjectPage"
+import { ProjectFeatures, ProjectVideo, ProjectDescription, ProjectHero, ProjectImages } from "@/components/ProjectPage"
 
 export function ProjectPage() {
     const { id } = useParams()
@@ -59,6 +59,8 @@ export function ProjectPage() {
             {project.images.length != 0 &&
                 <ProjectImages images={project.images} />
             }
+
+            <ProjectFeatures features={project.features} />
         </div>
     )
 }

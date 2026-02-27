@@ -1,4 +1,4 @@
-import type { Media, Project, ProjetBySection, Stack } from "@/types"
+import type { Feature, Media, Project, ProjetBySection, Stack } from "@/types"
 
 export type ButtonProps = {
     title: string,
@@ -36,4 +36,8 @@ export type ProjectVideoProps = {
 
 export type ProjectImagesProps = {
     images: Media[]
+}
+
+export type ProjectFeaturesProps = {
+    features: Feature[]
 }
