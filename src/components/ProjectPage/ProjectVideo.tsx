@@ -2,7 +2,7 @@ import type { ProjectVideoProps } from "@/types"
 
 const ProjectVideo = ({ video }: ProjectVideoProps) => {
     return (
-        <div className="px-12 md:px-20 lg:px-28 py-16">
+        <div className="px-12 md:px-20 lg:px-28 pb-16">
             <h2 className="text-2xl md:text-3xl font-bold text-teal-400 mb-6">
                 Démonstration vidéo
             </h2>

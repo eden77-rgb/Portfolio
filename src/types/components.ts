@@ -33,3 +33,7 @@ export type ProjectDescriptionProps = {
 export type ProjectVideoProps = {
     video: Media
 }
+
+export type ProjectImagesProps = {
+    images: Media[]
+}
