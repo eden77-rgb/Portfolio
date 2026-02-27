@@ -45,7 +45,7 @@ export type Feature = {
     content: string
 }
 
-export type Defi = {
+export type Defis = {
     content: string
 }
 
@@ -63,7 +63,7 @@ export type Project = {
     images: Media[],
     video?: Media
     features: Feature[],
-    defi: Defi[]
+    defis: Defis[]
     
 }
 

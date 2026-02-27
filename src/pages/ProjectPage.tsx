@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom"
 import { projects } from "@/data/projects"
 import type { Project } from "@/types"
-import { ProjectFeatures, ProjectVideo, ProjectDescription, ProjectHero, ProjectImages } from "@/components/ProjectPage"
+import { ProjectDefis, ProjectFeatures, ProjectVideo, ProjectDescription, ProjectHero, ProjectImages } from "@/components/ProjectPage"
 
 export function ProjectPage() {
     const { id } = useParams()
@@ -61,6 +61,8 @@ export function ProjectPage() {
             }
 
             <ProjectFeatures features={project.features} />
+
+            <ProjectDefis defis={project.defis} />
         </div>
     )
 }

@@ -34,7 +34,7 @@ export const projects: ProjetBySection = {
                 { content: "Gestion des objets et inventaire." },
                 { content: "Interaction et scripts d'événements dans le jeu." }
             ],
-            defi: [
+            defis: [
                 { content: "Implémenter la détection de collisions complexe sur une carte tilemap." },
                 { content: "Synchroniser animations et déplacements en temps réel." },
                 { content: "Structurer un moteur modulaire permettant ajout de fonctionnalités facilement." }
@@ -71,7 +71,7 @@ export const projects: ProjetBySection = {
                 { content: "Gestion de l'état du joueur et des interactions avec le décor." },
                 { content: "Gameplay solo exigeant et réactif, fidèle à l'expérience originale." }
             ],
-            defi: [
+            defis: [
                 { content: "Implémenter des mécaniques complexes (dash + collisions) de manière précise." },
                 { content: "Maintenir un gameplay fluide malgré les calculs physiques fréquents." },
                 { content: "Concevoir des niveaux équilibrés pour progresser tout en restant challengeant." }
@@ -105,7 +105,7 @@ export const projects: ProjetBySection = {
                 { content: "Gestion des flux de données entre interface et services IA." },
                 { content: "Système évolutif permettant ajout de nouvelles fonctionnalités IA." }
             ],
-            defi: [
+            defis: [
                 { content: "Définir et structurer correctement l'API pour communication front-back." },
                 { content: "Assurer compatibilité et intégration fluide des modèles IA dans le workflow." },
                 { content: "Concevoir une architecture évolutive qui supporte la montée en complexité du projet." }
@@ -145,7 +145,7 @@ export const projects: ProjetBySection = {
                 { content: "Architecture serverless pour scalabilité et déploiement edge." },
                 { content: "Temps de chargement optimisé pour performance maximale." }
             ],
-            defi: [
+            defis: [
                 { content: "Gestion efficace du cache et invalidation des pages dynamiques." },
                 { content: "Intégration du contenu IA dans un environnement serverless." },
                 { content: "Optimisation des performances et latence pour rendu côté edge." }
@@ -181,7 +181,7 @@ export const projects: ProjetBySection = {
                 { content: "Déploiement serverless sur Cloudflare Workers pour performance et scalabilité." },
                 { content: "Navigation fluide entre différentes catégories et fiches de films." }
             ],
-            defi: [
+            defis: [
                 { content: "Gestion des quotas et limitations de l'API TMDB." },
                 { content: "Normalisation et parsing correct des données JSON pour l'affichage." },
                 { content: "Optimisation de l'expérience utilisateur avec temps de chargement minimal et rendu réactif." }
@@ -218,7 +218,7 @@ export const projects: ProjetBySection = {
                 { content: "Déploiement serverless sur Cloudflare Workers pour chargement ultra-rapide." },
                 { content: "Architecture edge-first pour performance et scalabilité." }
             ],
-            defi: [
+            defis: [
                 { content: "Gestion de la persistance et synchronisation des liens côté serverless." },
                 { content: "Optimisation du temps de chargement pour expérience ultra-rapide." },
                 { content: "Conception d'une interface responsive adaptée à différents appareils." }
@@ -258,7 +258,7 @@ export const projects: ProjetBySection = {
                 { content: "Gestion des projets par utilisateur avec mise à jour collaborative en temps réel." },
                 { content: "Hébergement fullstack : front sur Cloudflare Pages, back sur Railway." }
             ],
-            defi: [
+            defis: [
                 { content: "Gestion des conflits lors de modifications simultanées sur le même tableau." },
                 { content: "Optimisation de la synchronisation temps réel pour maintenir réactivité." },
                 { content: "Structuration de l'architecture fullstack pour faciliter évolutivité et maintenance." }
@@ -295,7 +295,7 @@ export const projects: ProjetBySection = {
                 { content: "Compatibilité avec le mode solo et multijoueur." },
                 { content: "Équilibrage gameplay pour garantir challenge et cohérence." }
             ],
-            defi: [
+            defis: [
                 { content: "Assurer compatibilité avec le gameplay vanilla et l'écosystème existant." },
                 { content: "Génération procédurale du minerai Ruby dans les mondes Minecraft." },
                 { content: "Maintenir performance et fluidité en multijoueur avec nouveaux items et blocs." }
@@ -331,7 +331,7 @@ export const projects: ProjetBySection = {
                 { content: "Sauvegarde et organisation des requêtes fréquentes." },
                 { content: "Workflow modulable pour exploration et test d'API." }
             ],
-            defi: [
+            defis: [
                 { content: "Parsing efficace des réponses JSON complexes pour affichage." },
                 { content: "Gestion des erreurs et timeout des requêtes HTTP." },
                 { content: "Conception d'une interface modulable et ergonomique pour desktop." }
@@ -371,7 +371,7 @@ export const projects: ProjetBySection = {
                 { content: "Interface moderne, fluide et responsive sur Android et iOS." },
                 { content: "Intégration d'API REST pour catalogue et traitement des commandes." }
             ],
-            defi: [
+            defis: [
                 { content: "Synchronisation en temps réel entre commandes et interface utilisateur." },
                 { content: "Conception d'une UI performante et fluide sur différents appareils mobiles." },
                 { content: "Sécurisation des données utilisateur et authentification fiable." }
@@ -408,7 +408,7 @@ export const projects: ProjetBySection = {
                 { content: "Détection de collisions et physique de combat optimisée." },
                 { content: "Gameplay fluide et équilibré centré sur l'expérience multijoueur locale." }
             ],
-            defi: [
+            defis: [
                 { content: "Implémenter des mécaniques de combat précises et réactives." },
                 { content: "Synchronisation des inputs multiples sans latence perceptible." },
                 { content: "Gestion des collisions et knockback pour fluidité et équilibrage du gameplay." }
