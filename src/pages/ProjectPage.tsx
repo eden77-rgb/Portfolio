@@ -2,38 +2,12 @@ import { useParams } from "react-router-dom"
 import { projects } from "@/data/projects"
 import type { Project } from "@/types"
 import { ProjectDefis, ProjectFeatures, ProjectVideo, ProjectDescription, ProjectHero, ProjectImages } from "@/components/ProjectPage"
+import GoBackButton from "@/components/Button/GoBackButton"
+import { useEffect, useState } from "react"
 
 export function ProjectPage() {
     const { id } = useParams()
-
-    /*
-    * Thumbnail <img>
-    * 
-    * ProjectHero
-    *   > date
-    *   > titre
-    *   > accroche
-    *   > stacks
-    *   > liens
-    * 
-    * ProjectDescription
-    *   > titre type: A propos ...
-    *   > description
-    * 
-    * ProjectImages
-    *   > titre type: Images ...
-    *   > un map des images
-    * 
-    * ProjectFeatures
-    *   > titre type: Features ...
-    *   > un map des feature
-    * 
-    * ProjectDefi
-    *   > titre type: Defi ...
-    *   > un map des Defis 
-    * 
-    * Bouton : Retour a l'accueil
-    */
+    const [showVideo, setShowVideo] = useState(false)
 
     const getProjectById = (id: number): Project | undefined => {
         return Object.values(projects).flat().find(projet => projet.id == id)
@@ -41,10 +15,25 @@ export function ProjectPage() {
 
     const project = getProjectById(Number(id));
 
+    useEffect(() => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
+    }, [])
+
+    useEffect(() => {
+        setShowVideo(false)
+
+        if (project?.video) {
+            const timer = setTimeout(() => {
+                setShowVideo(true)
+            }, 400)
+
+            return () => clearTimeout(timer)
+        }
+    }, [project])
+
     if (!project) {
         return (<h1>Projet introuvable</h1>)
     }
-
 
     return (
         <div className="flex flex-col">
@@ -52,7 +41,7 @@ export function ProjectPage() {
 
             <ProjectDescription description={project.description} />
 
-            {project.video &&
+            {(showVideo && project.video) &&
                 <ProjectVideo video={project.video} />
             }
 
@@ -63,6 +52,8 @@ export function ProjectPage() {
             <ProjectFeatures features={project.features} />
 
             <ProjectDefis defis={project.defis} />
+
+            <GoBackButton />
         </div>
     )
 }
