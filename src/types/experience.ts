@@ -12,9 +12,9 @@
 */
 
 export type Type =
-    | "professionel"
-    | "education"
-    | "certification"
+    | "Expérience Professionnelle"
+    | "Formation"
+    | "Certification"
 
 export type DateValue = string | number
 
@@ -33,6 +33,25 @@ export type Task = {
 }
 
 export type Stack =
+    | "HTML"
+    | "CSS"
+    | "JavaScript" 
+    | "React.js"
+    | "Tailwind CSS"
+    | "Node.js" 
+    | "PHP"
+    | "Python"
+    | "Java"
+    | "SQL"
+    | "NoSQL"
+    | "Git / Github"
+    | "Docker"
+    | "Linux"
+    | "Three.js"
+    | "Xampp"
+    | "Unity"
+    | "C#"
+    | "Jira"
     | ""
     | ""
     | ""
@@ -45,7 +64,7 @@ export type Experience = {
     date: DateRange,
     location: Location,
     tasks?: Task[],
-    stacks: Stack[],
+    stacks?: Stack[],
     link?: string,
     download?: { path: string }
 }
