@@ -11,6 +11,8 @@
 * 
 */
 
+import type { Stack } from "./stacks"
+
 export type Type =
     | "Expérience Professionnelle"
     | "Formation"
@@ -31,30 +33,6 @@ export type Location = {
 export type Task = {
     content: string
 }
-
-export type Stack =
-    | "HTML"
-    | "CSS"
-    | "JavaScript" 
-    | "React.js"
-    | "Tailwind CSS"
-    | "Node.js" 
-    | "PHP"
-    | "Python"
-    | "Java"
-    | "SQL"
-    | "NoSQL"
-    | "Git / Github"
-    | "Docker"
-    | "Linux"
-    | "Three.js"
-    | "Xampp"
-    | "Unity"
-    | "C#"
-    | "Jira"
-    | ""
-    | ""
-    | ""
 
 export type Experience = {
     id: number,

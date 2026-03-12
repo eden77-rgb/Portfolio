@@ -1,9 +1,18 @@
 import type { Defis, Feature, Media, Project, ProjetBySection, Stack } from "@/types"
+import type { Experience } from "./experience"
 
 export type ButtonProps = {
     title: string,
     style?: "primary" | "secondary",
     action?: () => void
+}
+
+export type ExternalButtonProps = {
+    href: string
+}
+
+export type DownloadButtonProps = {
+    path: string
 }
 
 export type ProjectsProps = {
@@ -44,4 +53,16 @@ export type ProjectFeaturesProps = {
 
 export type ProjectDefisProps = {
     defis: Defis[]
+}
+
+export type ExperiencesSectionProps = {
+    experiences: Experience[]
+}
+
+export type ExperiencesContentProps = {
+    experiences: Experience[]
+}
+
+export type ExperienceCardProps = {
+    experience: Experience
 }
