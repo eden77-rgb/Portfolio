@@ -16,25 +16,31 @@ const ExperiencesContent = ({ experiences }: ExperiencesContentProps) => {
             <div className="absolute left-8 md:left-1/2 top-0 bottom-0 w-0.5 bg-linear-to-b from-emerald-500/20 via-teal-500/40 to-lime-500/20" />
 
             <div className="space-y-12">
-                {experiences.map((experience) => (
-                    <>
-                        {
-                            experience.type == "Formation" ? (
-                                <GraduationCap className="w-7 h-7 text-teal-400" />
-                            ) :
+                {experiences.map((experience, index) => (
+                    <div className={`relative flex items-start ${index % 2 === 0 ? 'md:flex-row-reverse' : 'md:flex-row'}`}>
 
-                                experience.type == "Expérience Professionnelle" ? (
-                                    <Briefcase className="w-7 h-7 text-emerald-400" />
+                        <div className="absolute left-8 md:left-1/2 -translate-x-1/2 z-10 w-12 h-12 rounded-full bg-[#0a0a0a] border-2 border-emerald-400/40 flex items-center justify-center">
+                            {
+                                experience.type == "Formation" ? (
+                                    <GraduationCap className="w-7 h-7 text-teal-400" />
                                 ) :
 
-                                    (
-                                        <Award className="w-7 h-7 text-lime-400" />
-                                    )
-                        }
+                                    experience.type == "Expérience Professionnelle" ? (
+                                        <Briefcase className="w-7 h-7 text-emerald-400" />
+                                    ) :
 
+                                        (
+                                            <Award className="w-7 h-7 text-lime-400" />
+                                        )
+                            }
+                        </div>
 
-                        <ExperienceCard experience={experience} />
-                    </>
+                        <div className="hidden md:block md:w-1/2" />
+
+                        <div className="ml-20 md:ml-0 md:w-1/2 md:pl-8 md:pr-16 w-[calc(100%-5rem)]">
+                            <ExperienceCard experience={experience} />
+                        </div>
+                    </div>
                 ))}
             </div>
         </div>
