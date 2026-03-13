@@ -37,7 +37,7 @@ const ExperiencesContent = ({ experiences }: ExperiencesContentProps) => {
 
                         <div className="hidden md:block md:w-1/2" />
 
-                        <div className="ml-20 md:ml-0 md:w-1/2 md:pl-8 md:pr-16 w-[calc(100%-5rem)]">
+                        <div className="ml-20 md:ml-0 md:w-5/12 md:px-8">
                             <ExperienceCard experience={experience} />
                         </div>
                     </div>

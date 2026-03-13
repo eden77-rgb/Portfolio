@@ -48,6 +48,14 @@ export const experiences: Experience[] = [
             city: "Chongqing",
             country: "Chine"
         },
+        stacks: [
+            "WMS (Warehouse Management System)",
+            "PLC Programming",
+            "TMS (Transport Management System)",
+            "SCADA Systems",
+            "ERP Systems",
+            "Industrial Robotics Basics"
+        ],
         link: "https://www.linkedin.com/posts/eden-vandewatyne_nouvelle-certification-obtenue-jai-le-activity-7414367317444407296-9T94?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFew-x0Bb8wkrAs-mjH5q7S_fX630Sj5UGY",
         download: { path: "" }
     },
@@ -106,6 +114,19 @@ export const experiences: Experience[] = [
             city: "Paris",
             country: "France"
         },
+        stacks: [
+            "OSPF",
+            "VLANs",
+            "STP",
+            "DHCP",
+            "NAT",
+            "DNS",
+            "VPN",
+            "IPv4 / IPv6",
+            "TCP/IP",
+            "AWS",
+            "Azure"
+        ],
         link: "https://www.credly.com/badges/c568c878-94ab-4a7b-8cf9-563e2b99100e/public_url",
         download: { path: "" }
     },
