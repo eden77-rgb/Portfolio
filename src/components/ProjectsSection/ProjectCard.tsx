@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 
 const ProjectCard = ({ projet }: ProjectCardProps) => {
     return (
-        <Link to={`/project/${projet.id}`}>
-            <div className="bg-[#0a0a0a] border border-gray-800 rounded-2xl overflow-hidden hover:border-emerald-500/50 transition-colors duration-300 group">
+        <Link to={`/project/${projet.id}`} className="h-full">
+            <div className="h-full flex flex-col bg-[#0a0a0a] border border-gray-800 rounded-2xl overflow-hidden hover:border-emerald-500/50 transition-colors duration-300 group">
                 <div className="aspect-video w-full overflow-hidden bg-gray-900">
                     <img
                         src={projet.thumbnail.path}

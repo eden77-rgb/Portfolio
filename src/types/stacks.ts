@@ -45,6 +45,7 @@ export type Stack =
   | "SCADA Systems"
   | "ERP Systems"
   | "Industrial Robotics Basics"
+  | "AI Industrial Basics"
   | "OSPF"
   | "VLANs"
   | "STP"

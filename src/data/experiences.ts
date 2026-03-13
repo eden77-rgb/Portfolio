@@ -54,7 +54,8 @@ export const experiences: Experience[] = [
             "TMS (Transport Management System)",
             "SCADA Systems",
             "ERP Systems",
-            "Industrial Robotics Basics"
+            "Industrial Robotics Basics",
+            "AI Industrial Basics"
         ],
         link: "https://www.linkedin.com/posts/eden-vandewatyne_nouvelle-certification-obtenue-jai-le-activity-7414367317444407296-9T94?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFew-x0Bb8wkrAs-mjH5q7S_fX630Sj5UGY",
         download: { path: "" }
