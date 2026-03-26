@@ -397,8 +397,7 @@ export const projects: ProjetBySection = {
             thumbnail: { path: "/assets/masamune/thumbnail.png", alt: "Image d'accueil de l'application" },
             images: [
                 { path: "/assets/masamune/1.png", alt: "Image de l'application" },
-                { path: "/assets/masamune/2.png", alt: "Image de l'application" },
-                { path: "/assets/masamune/3.png", alt: "Image de l'application" }
+                { path: "/assets/masamune/2.png", alt: "Image de l'application" }
             ],
             features: [
                 { content: "Affrontements 1v1 sur le même PC." },
