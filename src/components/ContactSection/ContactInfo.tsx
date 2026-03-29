@@ -3,7 +3,7 @@ import type { ContactInfoProps, Item, Social } from "@/types"
 const ContactInfo = ({ items, socials }: ContactInfoProps) => {
     return (
         <div className="bg-zinc-900/60 border border-zinc-800 rounded-2xl p-8 flex flex-col gap-8">
-            <h3 className="text-xl font-bold text-white">Nous contacter</h3>
+            <h3 className="text-xl font-bold text-white">Me contacter</h3>
 
             <div className="flex flex-col gap-5">
                 {items.map(({ icon, label, value, href }: Item) => (
