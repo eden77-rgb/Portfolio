@@ -1,6 +1,7 @@
+import type { ContactInfoProps } from "@/types"
 import ContactContent from "./ContactContent"
 
-const ContactSection = () => {
+const ContactSection = ({ items, socials }: ContactInfoProps) => {
     return (
         <section className="py-20 px-4 bg-black min-h-screen">
             <div className="text-center mb-20">
@@ -13,7 +14,7 @@ const ContactSection = () => {
                 </p>
             </div>
 
-            <ContactContent />
+            <ContactContent items={items} socials={socials} />
         </section>
     )
 }

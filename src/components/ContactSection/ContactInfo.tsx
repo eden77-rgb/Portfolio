@@ -16,7 +16,7 @@ const ContactInfo = ({ items, socials }: ContactInfoProps) => {
                                 {label}
                             </p>
                             {href ? (
-                                <a href={href} className="text-sm text-zinc-300 hover:text-emerald-400 transition-colors mt-0.5 block">
+                                <a href={href} target="_blank" className="text-sm text-zinc-300 hover:text-emerald-400 transition-colors mt-0.5 block">
                                     {value}
                                 </a>
                             ) : (
@@ -36,6 +36,7 @@ const ContactInfo = ({ items, socials }: ContactInfoProps) => {
                         <a
                             key={label}
                             href={href}
+                            target="_blank"
                             aria-label={label}
                             className="w-11 h-11 rounded-xl bg-emerald-950/60 border border-emerald-900/50 flex items-center justify-center text-emerald-400 hover:bg-emerald-500 hover:text-black hover:-translate-y-1 transition-all duration-200"
                         >
