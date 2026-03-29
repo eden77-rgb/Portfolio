@@ -15,6 +15,11 @@ export type DownloadButtonProps = {
     path: string
 }
 
+export type SubmitButtonProps = {
+    action: () => void
+}
+
+
 export type ProjectsProps = {
     sections: ProjetBySection
 }
