@@ -4,7 +4,7 @@ import ContactForm from "./ContactForm"
 const ContactContent = () => {
     return (
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.4fr] gap-6 max-w-5xl mx-auto">
-            <ContactInfo />
+            <ContactInfo items={[{ icon: <></>, label: "", value: "" }]} socials={[{ icon: <></>, label: "", }]} />
             <ContactForm />
         </div>
     )
