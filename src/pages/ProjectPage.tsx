@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom"
+import { Navigate, useParams } from "react-router-dom"
 import { projects } from "@/data/projects"
 import type { Project } from "@/types"
 import { ProjectDefis, ProjectFeatures, ProjectVideo, ProjectDescription, ProjectHero, ProjectImages } from "@/components/ProjectPage"
@@ -32,7 +32,9 @@ export function ProjectPage() {
     }, [project])
 
     if (!project) {
-        return (<h1>Projet introuvable</h1>)
+        return (
+            <Navigate to="/" replace />
+        )
     }
 
     return (
