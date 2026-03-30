@@ -25,7 +25,7 @@ export const projects: ProjetBySection = {
                 { path: "/assets/zelda/2.png", alt: "Image d'une animations" },
                 { path: "/assets/zelda/3.png", alt: "Image des objets" }
             ],
-            video: { path: "/assets/zelda/video.mp4", alt: "Vidéo de démonstration" },
+            video: { path: "/zelda/video.mp4", alt: "Vidéo de démonstration" },
             features: [
                 { content: "Gestion d'entités jouables et PNJ." },
                 { content: "Systèmes d'animations 2D fluides." },
@@ -62,7 +62,7 @@ export const projects: ProjetBySection = {
                 { path: "/assets/celeste/2.png", alt: "Image du jeu" },
                 { path: "/assets/celeste/3.png", alt: "Image de la fin" }
             ],
-            video: { path: "/assets/celeste/video.mp4", alt: "Vidéo de démonstration" },
+            video: { path: "/celeste/video.mp4", alt: "Vidéo de démonstration" },
             features: [
                 { content: "Mécaniques de plateforme : saut, dash." },
                 { content: "Gestion précise des collisions et des rebonds." },

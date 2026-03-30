@@ -15,6 +15,12 @@
 	},
 	"compatibility_flags": [
 		"nodejs_compat"
+	],
+	"r2_buckets": [
+		{
+			"bucket_name": "portfolio-assets",
+			"binding": "portfolio_assets"
+		}
 	]
 	/**
 	 * Smart Placement
