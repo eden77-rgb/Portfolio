@@ -2,6 +2,7 @@ import { HeroSection } from "@/components/HeroSection";
 import { ProjectsSection } from "@/components/ProjectsSection"
 import { ExperiencesSection } from "@/components/ExpreciencesSection"
 import { ContactSection } from "@/components/ContactSection"
+import Footer from "@/components/Footer"
 
 import { projects } from "@/data/projects"
 import { experiences } from "@/data/experiences";
@@ -15,6 +16,7 @@ export function MainPage() {
             <ProjectsSection sections={projects} />
             <ExperiencesSection experiences={experiences} />
             <ContactSection items={contactItem} socials={contactSocial} />
+            <Footer />
         </>
     )
 }
