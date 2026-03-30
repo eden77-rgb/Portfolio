@@ -30,8 +30,8 @@ const ExperienceCard = ({ experience }: ExperienceCardProps) => {
 
             {experience.tasks && (
                 <ul className="space-y-2 mb-5">
-                    {experience.tasks.map((task) => (
-                        <li className="flex items-start gap-3 text-gray-300 text-sm leading-relaxed">
+                    {experience.tasks.map((task, index) => (
+                        <li key={index} className="flex items-start gap-3 text-gray-300 text-sm leading-relaxed">
                             <span className={`mt-2 w-1.5 h-1.5 rounded-full shrink-0 bg-emerald-400`} />
                             <span>{task.content}</span>
                         </li>
@@ -41,8 +41,8 @@ const ExperienceCard = ({ experience }: ExperienceCardProps) => {
 
             {experience.stacks && (
                 <div className="flex flex-wrap gap-2 mb-4">
-                    {experience.stacks.map((stack) => (
-                        <ProjectStack stack={stack} />
+                    {experience.stacks.map((stack, index) => (
+                        <ProjectStack key={index} stack={stack} />
                     ))}
                 </div>
             )}

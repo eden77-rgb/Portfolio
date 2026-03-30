@@ -23,8 +23,8 @@ const ProjectCard = ({ projet }: ProjectCardProps) => {
                     </p>
 
                     <div className="flex flex-wrap gap-2 mt-auto">
-                        {projet.stacks.map((stack) => (
-                            <ProjectStack stack={stack} />
+                        {projet.stacks.map((stack, index) => (
+                            <ProjectStack key={index} stack={stack} />
                         ))}
                     </div>
                 </div>

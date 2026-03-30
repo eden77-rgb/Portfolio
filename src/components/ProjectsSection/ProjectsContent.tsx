@@ -4,10 +4,10 @@ import ProjectCard from "./ProjectCard"
 const ProjectsContent = ({ projets }: ProjectsContentProps) => {
     return (
         <>
-            {projets.map((projet) => (
-                <>
+            {projets.map((projet, index) => (
+                <div key={index}>
                     <ProjectCard projet={projet} />
-                </>
+                </div>
             ))}
         </>
     )
