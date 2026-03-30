@@ -11,7 +11,7 @@ import ExperiencesContent from "./ExperiencesContent"
 
 const ExperiencesSection = ({ experiences }: ExperiencesSectionProps) => {
     return (
-        <section>
+        <section id="experiences">
             <div className="text-center mb-20">
                 <h2 className="text-4xl md:text-5xl font-bold text-center mb-6 bg-linear-to-r from-emerald-400 via-teal-500 to-lime-400 bg-clip-text text-transparent leading-normal">
                     Parcours Professionnel

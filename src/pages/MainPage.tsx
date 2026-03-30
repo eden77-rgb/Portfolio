@@ -13,8 +13,8 @@ export function MainPage() {
         <>
             <HeroSection />
             <ProjectsSection sections={projects} />
-            <ExperiencesSection experiences={experiences}/>
-            <ContactSection items={contactItem} socials={contactSocial}/>
+            <ExperiencesSection experiences={experiences} />
+            <ContactSection items={contactItem} socials={contactSocial} />
         </>
     )
 }

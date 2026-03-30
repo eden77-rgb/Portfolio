@@ -37,10 +37,10 @@ const ProjectHero = ({ projet }: ProjectHeroProps) => {
 
                 <div className="flex gap-3 flex-wrap">
                     {projet.live &&
-                        <LinkButton title="Voir la démo" style="primary" action={() => { }} />
+                        <LinkButton title="Voir la démo" style="primary" action={() => { window.open(projet.live, "_blank") }} />
                     }
 
-                    <LinkButton title="Code source" style="secondary" action={() => { }} />
+                    <LinkButton title="Code source" style="secondary" action={() => { window.open(projet.github, "_blank") }} />
                 </div>
             </div>
         </div>
