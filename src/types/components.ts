@@ -16,7 +16,9 @@ export type DownloadButtonProps = {
 }
 
 export type SubmitButtonProps = {
-    action: () => void
+    action: () => void,
+    isLoading?: boolean,
+    disabled?: boolean
 }
 
 
