@@ -13,9 +13,13 @@ export function MainPage() {
     return (
         <>
             <HeroSection />
-            <ProjectsSection sections={projects} />
-            <ExperiencesSection experiences={experiences} />
-            <ContactSection items={contactItem} socials={contactSocial} />
+
+            <main>
+                <ProjectsSection sections={projects} />
+                <ExperiencesSection experiences={experiences} />
+                <ContactSection items={contactItem} socials={contactSocial} />
+            </main>
+
             <Footer />
         </>
     )

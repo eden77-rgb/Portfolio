@@ -2,7 +2,7 @@ import { Github, Linkedin, Mail } from 'lucide-react';
 
 const Footer = () => {
     return (
-        <section id="footer" className="pb-16 px-4">
+        <footer id="footer" className="pb-16 px-4">
             <div className="max-w-5xl mx-auto mt-16">
 
                 <div className="pt-8 border-t border-emerald-500/20 text-center">
@@ -40,7 +40,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </footer>
     )
 }
 

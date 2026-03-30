@@ -2,9 +2,12 @@ import HeroContent from "./HeroContent"
 
 const HeroSection = () => {
     return (
-        <section id="hero">
+        <header id="hero">
+            <nav>
+            </nav>
+
             <HeroContent />
-        </section>
+        </header>
     )
 }
 
