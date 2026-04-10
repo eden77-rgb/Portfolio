@@ -14,6 +14,31 @@ export const experiences: Experience[] = [
     {
         id: 1,
         type: "Formation",
+        title: "Bachelor Intelligence artificielle et Big Data",
+        company: "ESGI",
+        date: {
+            start: "sept. 2026",
+        },
+        location: {
+            city: "Paris",
+            country: "France"
+        },
+        tasks: [
+            { content: "Développement de modèles d'intelligence artificielle et implémentation d'algorithmes de machine learning." },
+            { content: "Analyse et traitement de grandes quantités de données structurées et non structurées." },
+            { content: "Mise en place de pipelines de données et optimisation des performances des systèmes Big Data." }
+        ],
+        stacks: [
+            "Python", "Java", "C", 
+            "SQL", "NoSQL", "Big Data", 
+            "Machine Learning", "Deep Learning", "TensorFlow", "Scikit-learn", "Hadoop",
+            "Data Visualization", "Power BI", 
+            "Git / Github", "Docker", "Linux"
+        ]
+    },
+    {
+        id: 2,
+        type: "Formation",
         title: "Bachelor Conception de Données et Applications",
         company: "ESTIAM",
         date: {
@@ -37,7 +62,7 @@ export const experiences: Experience[] = [
         ]
     },
     {
-        id: 2,
+        id: 3,
         type: "Certification",
         title: "Certificate of Competency in Basic Operations of Smart Logistics Facilities and Equipment",
         company: "Belt and Road International Skill Certfication Center (BRISCC)",
@@ -61,7 +86,7 @@ export const experiences: Experience[] = [
         download: { path: "" }
     },
     {
-        id: 3,
+        id: 4,
         type: "Expérience Professionnelle",
         title: "Stage Développeur Full Stack",
         company: "Eight Bamboos",
@@ -83,7 +108,7 @@ export const experiences: Experience[] = [
         ]
     },
     {
-        id: 4,
+        id: 5,
         type: "Formation",
         title: "Hackathon Game Développeur Unity",
         company: "ESTIAM",
@@ -104,7 +129,7 @@ export const experiences: Experience[] = [
         ]
     },
     {
-        id: 5,
+        id: 6,
         type: "Certification",
         title: "CCNA: Enterprise Networking, Security, and Automation",
         company: "Cisco",

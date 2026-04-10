@@ -15,7 +15,7 @@ const HeroContent = () => {
                     </h1>
 
                     <h2 className="text-2xl md:text-4xl lg:text-5xl font-light tracking-wider mb-6 text-gray-100 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-                        Full Stack Developer
+                        Développeur Full Stack & IA
                     </h2>
 
                     <p className="text-base md:text-lg lg:text-xl text-gray-400 max-w-2xl mx-auto mb-12 leading-relaxed animate-fade-in" style={{ animationDelay: '0.4s' }}>
