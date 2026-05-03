@@ -67,3 +67,7 @@ export type Stack =
   | "Hadoop"
   | "Data Visualization"
   | "Power BI"
+  | ".NET 10"
+  | "ASP.NET Core Web API"
+  | "Blazor"
+  | "Microsoft SQL Server"

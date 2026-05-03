@@ -113,8 +113,48 @@ export const projects: ProjetBySection = {
         }
     ],
     "Technologie web": [
-        { // PageWeaver
+        { // Pokemon API
             id: 4,
+            title: "PokeAPI 1G",
+            accroche: "Une application complète de Pokédex 1G développée avec .NET 10 et Blazor.",
+            description: `Application full-stack permettant de consulter le Pokédex de la 1ère génération. 
+                Le projet repose sur une Clean Architecture robuste et est entièrement 
+                containerisé avec Docker. Il intègre une API REST sous ASP.NET Core, une interface 
+                Blazor fluide et une base de données sous Microsoft SQL Server, offrant des fonctionnalités 
+                avancées de recherche et de filtrage.`,
+            date: 2026,
+            state: "Amélioration",
+            github: "https://github.com/eden77-rgb/Pokemon-API",
+            stacks: [
+                ".NET 10",
+                "ASP.NET Core Web API",
+                "Blazor",
+                "Microsoft SQL Server",
+                "Docker"
+            ],
+            thumbnail: { path: "/assets/pokemon/thumbnail.png", alt: "Image miniature du Pokédex" },
+            images: [
+                { path: "/assets/pokemon/thumbnail.png", alt: "Liste de tous les Pokémon" },
+                { path: "/assets/pokemon/1.png", alt: "Page détail d'un Pokémon" },
+                { path: "/assets/pokemon/2.png", alt: "Interface de filtrage" },
+                { path: "/assets/pokemon/3.png", alt: "Interface de recherche et filtrage" }
+            ],
+            features: [
+                { content: "Recherche dynamique de Pokémon par nom." },
+                { content: "Filtrage avancé par types (Feu, Eau, Plante, etc.)." },
+                { content: "API REST complète (CRUD) pour la gestion des données." },
+                { content: "Interface utilisateur moderne et réactive avec Blazor." },
+                { content: "Architecture logicielle découpée en couches (Clean Architecture)." },
+                { content: "Orchestration complète des services via Docker Compose." }
+            ],
+            defis: [
+                { content: "Mettre en œuvre une Clean Architecture pour séparer la logique métier de l'infrastructure." },
+                { content: "Configurer la communication réseau entre les containers (API, DB, Frontend)." },
+                { content: "Optimiser les requêtes SQL pour le filtrage multi-critères des entités." }
+            ]
+        },
+        { // PageWeaver
+            id: 5,
             title: "PageWeaver",
             accroche: "Génération de pages personnalisées à partir d'URL avec système de templates.",
             description: `PageWeaver est une application serverless développée avec Cloudflare Workers permettant de générer 
@@ -149,42 +189,6 @@ export const projects: ProjetBySection = {
                 { content: "Gestion efficace du cache et invalidation des pages dynamiques." },
                 { content: "Intégration du contenu IA dans un environnement serverless." },
                 { content: "Optimisation des performances et latence pour rendu côté edge." }
-            ]
-        },
-        { // Filmbook
-            id: 5,
-            title: "FilmBook",
-            accroche: "Architecture front-end orientée consommation d'API et rendu conditionnel dynamique.",
-            description: `FilmBook est une application serverless développée avec React et hébergée sur Cloudflare Workers, 
-                permettant d'explorer et de rechercher des films et séries via l'API TMDB. L'application propose une interface 
-                interactive pour consulter les détails des films, les studios de production, les affiches et les têtes d'affiches`,
-            github: "https://github.com/eden77-rgb/FilmBook",
-            date: 2025,
-            state: "Fini",
-            live: "https://filmbook.eden77-rgb.workers.dev/",
-            stacks: [
-                "React",
-                "CSS",
-                "React Router",
-                "Cloudflare"
-            ],
-            thumbnail: { path: "/assets/filmbook/thumbnail.png", alt: "Image miniature du site" },
-            images: [
-                { path: "/assets/filmbook/1.png", alt: "Image de la page d'un film" },
-                { path: "/assets/filmbook/2.png", alt: "Image de la page 404" }
-            ],
-            features: [
-                { content: "Exploration de films et séries via l'API The Movie Database." },
-                { content: "Affichage détaillé : synopsis, cast, studios et affiches." },
-                { content: "Interface interactive et responsive côté front-end React." },
-                { content: "Gestion asynchrone des requêtes API et parsing des données JSON." },
-                { content: "Déploiement serverless sur Cloudflare Workers pour performance et scalabilité." },
-                { content: "Navigation fluide entre différentes catégories et fiches de films." }
-            ],
-            defis: [
-                { content: "Gestion des quotas et limitations de l'API TMDB." },
-                { content: "Normalisation et parsing correct des données JSON pour l'affichage." },
-                { content: "Optimisation de l'expérience utilisateur avec temps de chargement minimal et rendu réactif." }
             ]
         },
         { // SiteLink
