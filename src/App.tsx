@@ -1,11 +1,14 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
 import { MainPage, ProjectPage } from "./pages"
+import ScrollProgress from "@/components/ScrollProgress"
 
 
 function App() {
     return (
         <>
             <BrowserRouter>
+                <ScrollProgress />
+
                 <Routes>
                     <Route path="/" element={<MainPage />} />
                     <Route path="/project/:id" element={<ProjectPage />} />
