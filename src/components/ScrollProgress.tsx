@@ -18,8 +18,8 @@ const ScrollProgress = () => {
     return (
         <section className="fixed top-0 left-0 right-0 h-1 bg-black/50 z-50">
             <div
-                className="h-full bg-linear-to-r from-emerald-500 via-teal-500 to-lime-500 transition-all duration-150"
-                style={{ width: `${scrollProgress}%` }}
+                className="h-full bg-linear-to-r from-emerald-500 via-teal-500 to-lime-500 origin-left"
+                style={{ transform: `scaleX(${scrollProgress / 100})` }}
             />
         </section>
     )
