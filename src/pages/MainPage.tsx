@@ -2,7 +2,7 @@ import { HeroSection } from "@/components/HeroSection";
 import { ProjectsSection } from "@/components/ProjectsSection"
 import { ExperiencesSection } from "@/components/ExpreciencesSection"
 import { ContactSection } from "@/components/ContactSection"
-import Footer from "@/components/Footer"
+import Footer from "@/components/Layouts/Footer"
 
 import { projects } from "@/data/projects"
 import { experiences } from "@/data/experiences";

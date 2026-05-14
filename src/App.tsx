@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
 import { MainPage, ProjectPage } from "./pages"
-import Navbar from "@/components/Navbar"
-import ScrollProgress from "@/components/ScrollProgress"
+import Navbar from "@/components/Layouts/Navbar"
+import ScrollProgress from "@/components/Layouts/ScrollProgress"
 
 
 function App() {
