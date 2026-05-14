@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
 import { MainPage, ProjectPage } from "./pages"
+import Navbar from "@/components/Navbar"
 import ScrollProgress from "@/components/ScrollProgress"
 
 
@@ -7,7 +8,8 @@ function App() {
     return (
         <>
             <BrowserRouter>
-                <ScrollProgress />
+                <Navbar />
+                <ScrollProgress />  
 
                 <Routes>
                     <Route path="/" element={<MainPage />} />
