@@ -19,8 +19,7 @@ const HeroContent = () => {
                     </h2>
 
                     <p className="text-base md:text-lg lg:text-xl text-gray-400 max-w-2xl mx-auto mb-12 leading-relaxed animate-fade-in" style={{ animationDelay: '0.4s' }}>
-                        Conception d'applications élégantes performantes modernes et innovantes.
-                        Passionné par le design interactif et le développement innovant et polyvalent agile
+                        Conception d'applications élégantes performantes modernes et innovantes. {"\n"} Passionné par le design interactif et le développement innovant et polyvalent agile
                     </p>
                 </div>
 

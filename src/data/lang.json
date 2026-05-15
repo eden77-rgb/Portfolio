@@ -1,0 +1,94 @@
+{
+    "MainPage": {
+        "HeroSection": {
+            "jobTitle": {
+                "fr": "Développeur Full Stack & IA",
+                "en": "Full Stack & AI Developer"
+            },
+
+            "jobDescription": {
+                "fr": "Conception d'applications élégantes performantes modernes et innovantes. {'\n'}  Passionné par le design interactif et le développement innovant et polyvalent agile",
+                "en": "Designing elegant, high-performance, modern, and innovative applications. {'\n'} Passionate about interactive design, as well as innovative, versatile, and agile development."
+            },
+
+            "projectButton": {
+                "fr": "Mes projets",
+                "en": "View my work"
+            },
+
+            "contactButton": {
+                "fr": "Me contacter",
+                "en": "Get in touch"
+            }
+        },
+
+        "ExperiencesSection": {
+            "sectionTitle": {
+                "fr": "Parcours Professionnel",
+                "en": "Professional Experience"
+            },
+
+            "sectionDescription": {
+                "fr": "Expérience, Formation et Certifications",
+                "en": "Experience, Education & Certifications"
+            }
+        },
+
+        "ContactSection": {
+            "sectionTitle": {
+                "fr": "Travaillons ensemble",
+                "en": "Let's Work Together"
+            },
+
+            "sectionDescription": {
+                "fr": "Un projet en tête ? Créons quelque chose d'incroyable ensemble.",
+                "en": "Have a project in mind? Let's create something amazing together."
+            },
+
+            "contactInfoTitle": {
+                "fr": "Me contacter",
+                "en": "Get In Touch"
+            },
+
+            "contactInfoDescription": {
+                "fr": "Me suivre sur",
+                "en": "Follow me on"
+            },
+
+            "contactFormTitle": {
+                "fr": "Envoyer un message",
+                "en": "Send a Message"
+            },
+
+            "contactFormNameLabel": {
+                "fr": "Nom",
+                "en": "Name"
+            },
+
+            "contactFormNamePlaceholder": {
+                "fr": "Votre nom",
+                "en": "Your name"
+            },
+
+            "contactFormEmailLabel": {
+                "fr": "Email",
+                "en": "Email"
+            },
+
+            "contactFormEmailPlaceholder": {
+                "fr": "votre.email@exemple.com",
+                "en": "your.email@exemple.com"
+            },
+
+            "contactFormMessageLabel": {
+                "fr": "Message",
+                "en": "Message"
+            },
+
+            "contactFormMessagePlaceholder": {
+                "fr": "Parlez-moi de votre projet...",
+                "en": "Tell me about your project..."
+            }
+        }
+    }
+}

@@ -19,7 +19,7 @@ const ProjectCard = ({ projet }: ProjectCardProps) => {
                         {projet.title}
                     </h2>
                     <p className="text-gray-400 mb-6 line-clamp-2">
-                        {projet.description.slice(0, 100) + "..."}
+                        {projet.accroche.fr.length > 100 ? projet.accroche.fr.slice(0, 100) + "..." : projet.accroche.fr}
                     </p>
 
                     <div className="flex flex-wrap gap-2 mt-auto">

@@ -10,7 +10,7 @@ export function ProjectPage() {
     const [showVideo, setShowVideo] = useState(false)
 
     const getProjectById = (id: number): Project | undefined => {
-        return Object.values(projects).flat().find(projet => projet.id == id)
+        return projects.flatMap(section => section.projects).find(project => project.id == id)
     }
 
     const project = getProjectById(Number(id));
@@ -41,7 +41,7 @@ export function ProjectPage() {
         <div className="flex flex-col">
             <ProjectHero projet={project} />
 
-            <ProjectDescription description={project.description} />
+            <ProjectDescription description={project.description.fr} />
 
             {(showVideo && project.video) &&
                 <ProjectVideo video={project.video} />

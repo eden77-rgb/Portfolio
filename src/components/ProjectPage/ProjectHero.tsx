@@ -26,7 +26,7 @@ const ProjectHero = ({ projet }: ProjectHeroProps) => {
                 </h1>
 
                 <p className="text-base md:text-lg lg:text-xl text-gray-400 max-w-2xl leading-relaxed mb-8">
-                    {projet.accroche}
+                    {projet.accroche.fr}
                 </p>
 
                 <div className="flex flex-wrap gap-2 mb-10">

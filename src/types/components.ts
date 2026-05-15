@@ -1,4 +1,4 @@
-import type { Defis, Feature, Media, Project, ProjetBySection, Stack } from "@/types"
+import type { Defis, Feature, Lang, Media, Project, ProjetBySection, Stack } from "@/types"
 import type { Experience } from "./experience"
 
 export type ButtonProps = {
@@ -55,11 +55,11 @@ export type ProjectImagesProps = {
 }
 
 export type ProjectFeaturesProps = {
-    features: Feature[]
+    features: Lang<Feature>[]
 }
 
 export type ProjectDefisProps = {
-    defis: Defis[]
+    defis: Lang<Defis>[]
 }
 
 export type ExperiencesSectionProps = {

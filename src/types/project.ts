@@ -5,7 +5,7 @@ export type Media = {
     alt?: string
 }
 
-export type State = 
+export type State =
     | "Bientot"
     | "En cours"
     | "Fini"
@@ -19,11 +19,16 @@ export type Defis = {
     content: string
 }
 
+export type Lang<T> = {
+    fr: T,
+    en: T
+}
+
 export type Project = {
     id: number,
     title: string,
-    accroche: string,
-    description: string,
+    accroche: Lang<string>,
+    description: Lang<string>,
     date: number,
     state: State,
     github: string,
@@ -32,14 +37,15 @@ export type Project = {
     thumbnail: Media,
     images: Media[],
     video?: Media
-    features: Feature[],
-    defis: Defis[]
-    
+    features: Lang<Feature>[],
+    defis: Lang<Defis>[]
 }
 
 export type Section = "Python" | "Technologie web" | "Java" | "Autre"
 
-export type ProjetBySection = {
-    [key in Section]?: Project[]
+export type ProjectSection = {
+    title: Lang<string>
+    projects: Project[]
 }
 
+export type ProjetBySection = ProjectSection[]

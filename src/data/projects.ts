@@ -1,421 +1,771 @@
 import type { ProjetBySection } from "@/types";
 
-export const projects: ProjetBySection = {
-    "Python": [
-        { // Zelda
-            id: 1,
-            title: "The Legend of Zelda: A Link to the Past",
-            accroche: "Un clone de The Legend of Zelda: A Link to the Past développé en Python.",
-            description: `Implémentation d'un clone du jeu classique The Legend of Zelda: A Link to the Past développé en Python 
-                avec les bibliothèque Pygame, PyTMX et PyScroll. Ce projet m'a permis d'explorer et d'appliquer les concepts du 
-                développement de jeux 2D, notamment la gestion d'entités, les systèmes d'animation, l'architecture modulaire et la 
-                création d'une carte avec collision`,
-            date: 2025,
-            state: "Amélioration",
-            github: "https://github.com/eden77-rgb/Zelda",
-            stacks: [
-                "Python",
-                "Pygame",
-                "PyTMX",
-                "PyScroll"
-            ],
-            thumbnail: { path: "/assets/zelda/thumbnail.png", alt: "Image miniature du menu" },
-            images: [
-                { path: "/assets/zelda/1.png", alt: "Image du jeu" },
-                { path: "/assets/zelda/2.png", alt: "Image d'une animations" },
-                { path: "/assets/zelda/3.png", alt: "Image des objets" }
-            ],
-            video: { path: "/zelda/video.mp4", alt: "Vidéo de démonstration" },
-            features: [
-                { content: "Gestion d'entités jouables et PNJ." },
-                { content: "Systèmes d'animations 2D fluides." },
-                { content: "Carte avec collisions et obstacles." },
-                { content: "Architecture modulaire du moteur de jeu." },
-                { content: "Gestion des objets et inventaire." },
-                { content: "Interaction et scripts d'événements dans le jeu." }
-            ],
-            defis: [
-                { content: "Implémenter la détection de collisions complexe sur une carte tilemap." },
-                { content: "Synchroniser animations et déplacements en temps réel." },
-                { content: "Structurer un moteur modulaire permettant ajout de fonctionnalités facilement." }
-            ]
+export const projects: ProjetBySection = [
+    {
+        title: {
+            fr: "Python",
+            en: "Python"
         },
-        { // Celeste
-            id: 2,
-            title: "Celeste",
-            accroche: "Clone minimaliste de Celeste développé avec Pygame.",
-            description: `Implémentation en groupe d'un clone minimaliste du jeu de plateforme indépendant Celeste développé 
-                en Python avec la bibliothèque Pygame. Ce projet m'a permis d'explorer et d'appliquer les concepts du 
-                développement de jeux 2D orientés plateforme, notamment la gestion précise des collisions, les mécaniques de 
-                mouvement complexes (saut, dash), les systèmes d'animation fluides, l'architecture modulaire et la conception de 
-                niveaux avec obstacles et checkpoints.`,
-            date: 2024,
-            state: "Fini",
-            github: "https://github.com/eden77-rgb/Celeste",
-            stacks: [
-                "Python",
-                "Pygame"
-            ],
-            thumbnail: { path: "/assets/celeste/thumbnail.png", alt: "Image miniature du menu" },
-            images: [
-                { path: "/assets/celeste/1.png", alt: "Image du jeu" },
-                { path: "/assets/celeste/2.png", alt: "Image du jeu" },
-                { path: "/assets/celeste/3.png", alt: "Image de la fin" }
-            ],
-            video: { path: "/celeste/video.mp4", alt: "Vidéo de démonstration" },
-            features: [
-                { content: "Mécaniques de plateforme : saut, dash." },
-                { content: "Gestion précise des collisions et des rebonds." },
-                { content: "Systèmes d'animations pour personnages." },
-                { content: "Conception de niveaux avec checkpoints et obstacles." },
-                { content: "Gestion de l'état du joueur et des interactions avec le décor." },
-                { content: "Gameplay solo exigeant et réactif, fidèle à l'expérience originale." }
-            ],
-            defis: [
-                { content: "Implémenter des mécaniques complexes (dash + collisions) de manière précise." },
-                { content: "Maintenir un gameplay fluide malgré les calculs physiques fréquents." },
-                { content: "Concevoir des niveaux équilibrés pour progresser tout en restant challengeant." }
-            ]
+        projects: [
+            { // Zelda
+                id: 1,
+                title: "The Legend of Zelda: A Link to the Past",
+                accroche: {
+                    fr: "Un clone de The Legend of Zelda: A Link to the Past développé en Python.",
+                    en: "A clone of The Legend of Zelda: A Link to the Past developed in Python."
+                },
+                description: {
+                    fr: `Implémentation d'un clone du jeu classique The Legend of Zelda: A Link to the Past développé en Python avec les bibliothèque Pygame, PyTMX et PyScroll. Ce projet m'a permis d'explorer et d'appliquer les concepts du développement de jeux 2D, notamment la gestion d'entités, les systèmes d'animation, l'architecture modulaire et la création d'une carte avec collision`,
+                    en: `Implementation of a clone of the classic game The Legend of Zelda: A Link to the Past developed in Python using Pygame, PyTMX and PyScroll. This project allowed me to explore and apply 2D game development concepts such as entity management, animation systems, modular architecture, and tilemap collision handling.`
+                },
+                date: 2025,
+                state: "Amélioration",
+                github: "https://github.com/eden77-rgb/Zelda",
+                stacks: [
+                    "Python",
+                    "Pygame",
+                    "PyTMX",
+                    "PyScroll"
+                ],
+                thumbnail: { path: "/assets/zelda/thumbnail.png", alt: "Image miniature du menu" },
+                images: [
+                    { path: "/assets/zelda/1.png", alt: "Image du jeu" },
+                    { path: "/assets/zelda/2.png", alt: "Image d'une animations" },
+                    { path: "/assets/zelda/3.png", alt: "Image des objets" }
+                ],
+                video: { path: "/zelda/video.mp4", alt: "Vidéo de démonstration" },
+                features: [
+                    {
+                        fr: { content: "Gestion d'entités jouables et PNJ." },
+                        en: { content: "Playable entity and NPC management." }
+                    },
+                    {
+                        fr: { content: "Systèmes d'animations 2D fluides." },
+                        en: { content: "Smooth 2D animation systems." }
+                    },
+                    {
+                        fr: { content: "Carte avec collisions et obstacles." },
+                        en: { content: "Tilemap with collisions and obstacles." }
+                    },
+                    {
+                        fr: { content: "Architecture modulaire du moteur de jeu." },
+                        en: { content: "Modular game engine architecture." }
+                    },
+                    {
+                        fr: { content: "Gestion des objets et inventaire." },
+                        en: { content: "Item and inventory management." }
+                    },
+                    {
+                        fr: { content: "Interaction et scripts d'événements dans le jeu." },
+                        en: { content: "In-game event scripting and interactions." }
+                    }
+                ],
+                defis: [
+                    {
+                        fr: { content: "Implémenter la détection de collisions complexe sur une carte tilemap." },
+                        en: { content: "Implement complex collision detection on a tilemap." }
+                    },
+                    {
+                        fr: { content: "Synchroniser animations et déplacements en temps réel." },
+                        en: { content: "Synchronize animations and movement in real time." }
+                    },
+                    {
+                        fr: { content: "Structurer un moteur modulaire permettant ajout de fonctionnalités facilement." },
+                        en: { content: "Design a modular engine allowing easy feature extension." }
+                    }
+                ]
+            },
+            { // Celeste
+                id: 2,
+                title: "Celeste",
+                accroche: {
+                    fr: "Clone minimaliste de Celeste développé avec Pygame.",
+                    en: "Minimalist Celeste clone developed with Pygame."
+                },
+                description: {
+                    fr: `Implémentation en groupe d'un clone minimaliste du jeu de plateforme indépendant Celeste développé en Python avec la bibliothèque Pygame. Ce projet m'a permis d'explorer et d'appliquer les concepts du développement de jeux 2D orientés plateforme, notamment la gestion précise des collisions, les mécaniques de mouvement complexes (saut, dash), les systèmes d'animation fluides, l'architecture modulaire et la conception de niveaux avec obstacles et checkpoints.`,
+                    en: `Team implementation of a minimalist clone of the indie platformer Celeste using Python and Pygame. This project allowed me to explore 2D platformer development concepts such as precise collision handling, complex movement mechanics (jumping, dashing), smooth animation systems, modular architecture, and level design with obstacles and checkpoints.`
+                },
+                date: 2024,
+                state: "Fini",
+                github: "https://github.com/eden77-rgb/Celeste",
+                stacks: [
+                    "Python",
+                    "Pygame"
+                ],
+                thumbnail: { path: "/assets/celeste/thumbnail.png", alt: "Image miniature du menu" },
+                images: [
+                    { path: "/assets/celeste/1.png", alt: "Image du jeu" },
+                    { path: "/assets/celeste/2.png", alt: "Image du jeu" },
+                    { path: "/assets/celeste/3.png", alt: "Image de la fin" }
+                ],
+                video: { path: "/celeste/video.mp4", alt: "Vidéo de démonstration" },
+                features: [
+                    {
+                        fr: { content: "Mécaniques de plateforme : saut, dash." },
+                        en: { content: "Platform mechanics: jump, dash." }
+                    },
+                    {
+                        fr: { content: "Gestion précise des collisions et des rebonds." },
+                        en: { content: "Precise collision and bounce handling." }
+                    },
+                    {
+                        fr: { content: "Systèmes d'animations pour personnages." },
+                        en: { content: "Character animation systems." }
+                    },
+                    {
+                        fr: { content: "Conception de niveaux avec checkpoints et obstacles." },
+                        en: { content: "Level design with checkpoints and obstacles." }
+                    },
+                    {
+                        fr: { content: "Gestion de l'état du joueur et des interactions avec le décor." },
+                        en: { content: "Player state and environment interaction handling." }
+                    },
+                    {
+                        fr: { content: "Gameplay solo exigeant et réactif, fidèle à l'expérience originale." },
+                        en: { content: "Challenging and responsive solo gameplay faithful to the original." }
+                    }
+                ],
+                defis: [
+                    {
+                        fr: { content: "Implémenter des mécaniques complexes (dash + collisions) de manière précise." },
+                        en: { content: "Implement complex mechanics (dash + collisions) precisely." }
+                    },
+                    {
+                        fr: { content: "Maintenir un gameplay fluide malgré les calculs physiques fréquents." },
+                        en: { content: "Maintain smooth gameplay despite heavy physics calculations." }
+                    },
+                    {
+                        fr: { content: "Concevoir des niveaux équilibrés pour progresser tout en restant challengeant." },
+                        en: { content: "Design balanced yet challenging levels." }
+                    }
+                ]
+            },
+            { // G.E.R.A.R.D
+                id: 3,
+                title: "G.E.R.A.R.D",
+                accroche: {
+                    fr: "Architecture front-end C# / back-end Python avec communication API REST pour intérroger un IA.",
+                    en: "C# front-end / Python back-end architecture with REST API communication to query an AI system."
+                },
+                description: {
+                    fr: `Développement d'une application interactive combinant un front-end en C# et un back-end en Python. Le projet est actuellement orienté vers la mise en place de la communication front-back via API, ainsi que l'intégration progressive de modèles d'intelligence artificielle (Ollama) pour le traitement et la génération de contenu. Ce travail me permet d'explorer les problématiques liées à l'interaction utilisateur, à l'architecture modulaire, à la gestion des flux de données et à la conception d'un système évolutif reliant une interface utilisateur riche à des services d'IA.`,
+                    en: `Development of an interactive application combining a C# front-end and a Python back-end. The project currently focuses on front-back communication via REST API, as well as progressive integration of AI models (Ollama) for content processing and generation. This work explores user interaction challenges, modular architecture, data flow management, and the design of a scalable system connecting a rich user interface to AI services.`
+                },
+                date: 2026,
+                state: "Bientot",
+                github: "https://github.com/eden77-rgb/Innovation-Project",
+                stacks: [
+                    "Python",
+                    "FastAPI",
+                    "Ollama"
+                ],
+                thumbnail: { path: "/assets/gerard/thumbnail.png", alt: "Aucune image disponible" },
+                images: [],
+                features: [
+                    {
+                        fr: { content: "Communication front-end / back-end via API REST." },
+                        en: { content: "Front-end / back-end communication via REST API." }
+                    },
+                    {
+                        fr: { content: "Intégration progressive de modèles d'IA pour génération et traitement de contenu." },
+                        en: { content: "Progressive integration of AI models for generation and processing." }
+                    },
+                    {
+                        fr: { content: "Interface utilisateur interactive et responsive." },
+                        en: { content: "Interactive and responsive user interface." }
+                    },
+                    {
+                        fr: { content: "Architecture modulaire pour faciliter l'évolution future." },
+                        en: { content: "Modular architecture for future scalability." }
+                    },
+                    {
+                        fr: { content: "Gestion des flux de données entre interface et services IA." },
+                        en: { content: "Data flow management between UI and AI services." }
+                    },
+                    {
+                        fr: { content: "Système évolutif permettant ajout de nouvelles fonctionnalités IA." },
+                        en: { content: "Scalable system allowing new AI features." }
+                    }
+                ],
+                defis: [
+                    {
+                        fr: { content: "Définir et structurer correctement l'API pour communication front-back." },
+                        en: { content: "Design and structure the API correctly for front-back communication." }
+                    },
+                    {
+                        fr: { content: "Assurer compatibilité et intégration fluide des modèles IA dans le workflow." },
+                        en: { content: "Ensure smooth integration of AI models into the workflow." }
+                    },
+                    {
+                        fr: { content: "Concevoir une architecture évolutive qui supporte la montée en complexité du projet." },
+                        en: { content: "Design a scalable architecture supporting increasing complexity." }
+                    }
+                ]
+            }
+        ],
+    },
+    {
+        title: {
+            fr: "Technologie web",
+            en: "Web technologies"
         },
-        { // G.E.R.A.R.D
-            id: 3,
-            title: "G.E.R.A.R.D",
-            accroche: "Architecture front-end C# / back-end Python avec communication API REST pour intérroger un IA.",
-            description: `Développement d'une application interactive combinant un front-end en C# et un back-end en Python. 
-                Le projet est actuellement orienté vers la mise en place de la communication front-back via API, ainsi que 
-                l'intégration progressive de modèles d'intelligence artificielle (Ollama) pour le traitement et la génération 
-                de contenu. Ce travail me permet d'explorer les problématiques liées à l'interaction utilisateur, à 
-                l'architecture modulaire, à la gestion des flux de données et à la conception d'un système évolutif reliant une 
-                interface utilisateur riche à des services d'IA`,
-            date: 2026,
-            state: "Bientot",
-            github: "https://github.com/eden77-rgb/Innovation-Project",
-            stacks: [
-                "Python",
-                "FastAPI",
-                "Ollama"
-            ],
-            thumbnail: { path: "/assets/gerard/thumbnail.png", alt: "Aucune image disponible" },
-            images: [],
-            features: [
-                { content: "Communication front-end / back-end via API REST." },
-                { content: "Intégration progressive de modèles d'IA pour génération et traitement de contenu." },
-                { content: "Interface utilisateur interactive et responsive." },
-                { content: "Architecture modulaire pour faciliter l'évolution future." },
-                { content: "Gestion des flux de données entre interface et services IA." },
-                { content: "Système évolutif permettant ajout de nouvelles fonctionnalités IA." }
-            ],
-            defis: [
-                { content: "Définir et structurer correctement l'API pour communication front-back." },
-                { content: "Assurer compatibilité et intégration fluide des modèles IA dans le workflow." },
-                { content: "Concevoir une architecture évolutive qui supporte la montée en complexité du projet." }
-            ]
-        }
-    ],
-    "Technologie web": [
-        { // Pokemon API
-            id: 4,
-            title: "PokeAPI 1G",
-            accroche: "Une application complète de Pokédex 1G développée avec .NET 10 et Blazor.",
-            description: `Application full-stack permettant de consulter le Pokédex de la 1ère génération. 
-                Le projet repose sur une Clean Architecture robuste et est entièrement 
-                containerisé avec Docker. Il intègre une API REST sous ASP.NET Core, une interface 
-                Blazor fluide et une base de données sous Microsoft SQL Server, offrant des fonctionnalités 
-                avancées de recherche et de filtrage.`,
-            date: 2026,
-            state: "Amélioration",
-            github: "https://github.com/eden77-rgb/Pokemon-API",
-            stacks: [
-                ".NET 10",
-                "ASP.NET Core Web API",
-                "Blazor",
-                "Microsoft SQL Server",
-                "Docker"
-            ],
-            thumbnail: { path: "/assets/pokemon/thumbnail.png", alt: "Image miniature du Pokédex" },
-            images: [
-                { path: "/assets/pokemon/thumbnail.png", alt: "Liste de tous les Pokémon" },
-                { path: "/assets/pokemon/1.png", alt: "Page détail d'un Pokémon" },
-                { path: "/assets/pokemon/2.png", alt: "Interface de filtrage" },
-                { path: "/assets/pokemon/3.png", alt: "Interface de recherche et filtrage" }
-            ],
-            features: [
-                { content: "Recherche dynamique de Pokémon par nom." },
-                { content: "Filtrage avancé par types (Feu, Eau, Plante, etc.)." },
-                { content: "API REST complète (CRUD) pour la gestion des données." },
-                { content: "Interface utilisateur moderne et réactive avec Blazor." },
-                { content: "Architecture logicielle découpée en couches (Clean Architecture)." },
-                { content: "Orchestration complète des services via Docker Compose." }
-            ],
-            defis: [
-                { content: "Mettre en œuvre une Clean Architecture pour séparer la logique métier de l'infrastructure." },
-                { content: "Configurer la communication réseau entre les containers (API, DB, Frontend)." },
-                { content: "Optimiser les requêtes SQL pour le filtrage multi-critères des entités." }
-            ]
+        projects: [
+            { // Pokemon API
+                id: 4,
+                title: "PokeAPI 1G",
+                accroche: {
+                    fr: "Une application complète de Pokédex 1G développée avec .NET 10 et Blazor.",
+                    en: "A full 1st-gen Pokédex application developed with .NET 10 and Blazor."
+                },
+                description: {
+                    fr: `Application full-stack permettant de consulter le Pokédex de la 1ère génération. Le projet repose sur une Clean Architecture robuste et est entièrement containerisé avec Docker. Il intègre une API REST sous ASP.NET Core, une interface Blazor fluide et une base de données sous Microsoft SQL Server, offrant des fonctionnalités avancées de recherche et de filtrage.`,
+                    en: `Full-stack application allowing users to browse the 1st generation Pokédex. The project is based on a robust Clean Architecture and is fully containerized with Docker. It includes a REST API built with ASP.NET Core, a smooth Blazor interface, and a Microsoft SQL Server database, providing advanced search and filtering features.`
+                },
+                date: 2026,
+                state: "Amélioration",
+                github: "https://github.com/eden77-rgb/Pokemon-API",
+                stacks: [
+                    ".NET 10",
+                    "ASP.NET Core Web API",
+                    "Blazor",
+                    "Microsoft SQL Server",
+                    "Docker"
+                ],
+                thumbnail: { path: "/assets/pokemon/thumbnail.png", alt: "Image miniature du Pokédex" },
+                images: [
+                    { path: "/assets/pokemon/thumbnail.png", alt: "Liste de tous les Pokémon" },
+                    { path: "/assets/pokemon/1.png", alt: "Page détail d'un Pokémon" },
+                    { path: "/assets/pokemon/2.png", alt: "Interface de filtrage" },
+                    { path: "/assets/pokemon/3.png", alt: "Interface de recherche et filtrage" }
+                ],
+                features: [
+                    {
+                        fr: { content: "Recherche dynamique de Pokémon par nom." },
+                        en: { content: "Dynamic Pokémon search by name." }
+                    },
+                    {
+                        fr: { content: "Filtrage avancé par types (Feu, Eau, Plante, etc.)." },
+                        en: { content: "Advanced filtering by types (Fire, Water, Grass, etc.)." }
+                    },
+                    {
+                        fr: { content: "API REST complète (CRUD) pour la gestion des données." },
+                        en: { content: "Full REST API (CRUD) for data management." }
+                    },
+                    {
+                        fr: { content: "Interface utilisateur moderne et réactive avec Blazor." },
+                        en: { content: "Modern and responsive UI built with Blazor." }
+                    },
+                    {
+                        fr: { content: "Architecture logicielle découpée en couches (Clean Architecture)." },
+                        en: { content: "Layered software architecture (Clean Architecture)." }
+                    },
+                    {
+                        fr: { content: "Orchestration complète des services via Docker Compose." },
+                        en: { content: "Full service orchestration using Docker Compose." }
+                    }
+                ],
+                defis: [
+                    {
+                        fr: { content: "Mettre en œuvre une Clean Architecture pour séparer la logique métier de l'infrastructure." },
+                        en: { content: "Implement Clean Architecture to separate business logic from infrastructure." }
+                    },
+                    {
+                        fr: { content: "Configurer la communication réseau entre les containers (API, DB, Frontend)." },
+                        en: { content: "Configure network communication between containers (API, DB, Frontend)." }
+                    },
+                    {
+                        fr: { content: "Optimiser les requêtes SQL pour le filtrage multi-critères des entités." },
+                        en: { content: "Optimize SQL queries for multi-criteria filtering." }
+                    }
+                ]
+            },
+            { // PageWeaver
+                id: 5,
+                title: "PageWeaver",
+                accroche: {
+                    fr: "Génération de pages personnalisées à partir d'URL avec système de templates.",
+                    en: "Generation of custom pages from URLs using a template system."
+                },
+                description: {
+                    fr: `PageWeaver est une application serverless développée avec Cloudflare Workers permettant de générer des pages HTML personnalisées à partir d'une URL. Elle offre un système de templates, de contenus dynamiques (par IA), et un cache intelligent via KV Namespace.`,
+                    en: `PageWeaver is a serverless application built with Cloudflare Workers that generates custom HTML pages from a URL. It features a template system, AI-generated dynamic content, and intelligent caching using a KV Namespace.`
+                },
+                date: 2025,
+                state: "Fini",
+                github: "https://github.com/eden77-rgb/PageWeaver",
+                live: "https://pageweaver.eden77-rgb.workers.dev/",
+                stacks: [
+                    "HTML",
+                    "CSS",
+                    "JavaScript",
+                    "Cloudflare",
+                    "KV Namespace"
+                ],
+                thumbnail: { path: "/assets/pageweaver/thumbnail.png", alt: "Image miniature du site" },
+                images: [
+                    { path: "/assets/pageweaver/1.png", alt: "Image du site" },
+                    { path: "/assets/pageweaver/2.png", alt: "Image du site" },
+                    { path: "/assets/pageweaver/3.png", alt: "Image du site" }
+                ],
+                features: [
+                    {
+                        fr: { content: "Génération dynamique de pages HTML personnalisées à partir d'une URL." },
+                        en: { content: "Dynamic generation of custom HTML pages from a URL." }
+                    },
+                    {
+                        fr: { content: "Système de templates modulables pour mise en page facile." },
+                        en: { content: "Modular template system for easy page layout." }
+                    },
+                    {
+                        fr: { content: "Contenu dynamique généré par IA." },
+                        en: { content: "AI-generated dynamic content." }
+                    },
+                    {
+                        fr: { content: "Cache intelligent et persistant via KV Namespace." },
+                        en: { content: "Intelligent and persistent caching via KV Namespace." }
+                    },
+                    {
+                        fr: { content: "Architecture serverless pour scalabilité et déploiement edge." },
+                        en: { content: "Serverless architecture for scalability and edge deployment." }
+                    },
+                    {
+                        fr: { content: "Temps de chargement optimisé pour performance maximale." },
+                        en: { content: "Optimized loading time for maximum performance." }
+                    }
+                ],
+                defis: [
+                    {
+                        fr: { content: "Gestion efficace du cache et invalidation des pages dynamiques." },
+                        en: { content: "Efficient caching and dynamic page invalidation management." }
+                    },
+                    {
+                        fr: { content: "Intégration du contenu IA dans un environnement serverless." },
+                        en: { content: "Integration of AI content in a serverless environment." }
+                    },
+                    {
+                        fr: { content: "Optimisation des performances et latence pour rendu côté edge." },
+                        en: { content: "Performance and latency optimization for edge rendering." }
+                    }
+                ]
+            },
+            { // SiteLink
+                id: 6,
+                title: "Sitelink",
+                accroche: {
+                    fr: "Alternative moderne à Linktree avec architecture edge-first et temps de chargement minimal.",
+                    en: "Modern Linktree alternative with edge-first architecture and minimal load time."
+                },
+                description: {
+                    fr: `Sitelink (SachaSLM) est une application serverless développée avec Cloudflare Workers, conçue comme une alternative moderne à Linktree pour les streamers. Elle permet de créer et partager rapidement une page de liens personnalisée, regroupant réseaux sociaux, plateformes de streaming et contenus divers. L'application propose un design minimaliste, une gestion dynamique des liens et un chargement ultra-rapide.`,
+                    en: `Sitelink (SachaSLM) is a serverless application built with Cloudflare Workers, designed as a modern Linktree alternative for streamers. It allows users to quickly create and share a custom link page combining social networks, streaming platforms, and various content. The app features a minimal design, dynamic link management, and ultra-fast loading.`
+                },
+                date: 2026,
+                state: "En cours",
+                github: "https://github.com/eden77-rgb/SachaSLM",
+                live: "https://sachaslm.eden77-rgb.workers.dev/",
+                stacks: [
+                    "HTML",
+                    "CSS",
+                    "JavaScript"
+                ],
+                thumbnail: { path: "/assets/sitelink/thumbnail.png", alt: "Image miniature du site" },
+                images: [
+                    { path: "/assets/sitelink/1.png", alt: "Image du site" },
+                    { path: "/assets/sitelink/2.png", alt: "Image du site" },
+                    { path: "/assets/sitelink/3.png", alt: "Image du site" }
+                ],
+                features: [
+                    {
+                        fr: { content: "Création et partage rapide de pages de liens personnalisées." },
+                        en: { content: "Fast creation and sharing of custom link pages." }
+                    },
+                    {
+                        fr: { content: "Gestion dynamique des liens : ajout, modification, suppression." },
+                        en: { content: "Dynamic link management: add, edit, delete." }
+                    },
+                    {
+                        fr: { content: "Regroupement de réseaux sociaux, plateformes de streaming et contenus divers." },
+                        en: { content: "Aggregation of social networks, streaming platforms, and various content." }
+                    },
+                    {
+                        fr: { content: "Interface minimaliste et responsive pour une expérience utilisateur optimale." },
+                        en: { content: "Minimal and responsive UI for optimal user experience." }
+                    },
+                    {
+                        fr: { content: "Déploiement serverless sur Cloudflare Workers pour chargement ultra-rapide." },
+                        en: { content: "Serverless deployment on Cloudflare Workers for ultra-fast loading." }
+                    },
+                    {
+                        fr: { content: "Architecture edge-first pour performance et scalabilité." },
+                        en: { content: "Edge-first architecture for performance and scalability." }
+                    }
+                ],
+                defis: [
+                    {
+                        fr: { content: "Gestion de la persistance et synchronisation des liens côté serverless." },
+                        en: { content: "Persistence and synchronization of links in a serverless environment." }
+                    },
+                    {
+                        fr: { content: "Optimisation du temps de chargement pour expérience ultra-rapide." },
+                        en: { content: "Load time optimization for ultra-fast experience." }
+                    },
+                    {
+                        fr: { content: "Conception d'une interface responsive adaptée à différents appareils." },
+                        en: { content: "Designing a responsive UI for multiple devices." }
+                    }
+                ]
+            },
+            /* SERVICE DOWN
+        
+            { // Kanban
+                id: 7,
+                title: "Kanban",
+                accroche: {
+                    fr: "Application kanban fullstack avec React front-end / Node.js back-end sur Railway et Cloudflare Pages.",
+                    en: "Full-stack Kanban application with React front-end and Node.js back-end hosted on Railway and Cloudflare Pages."
+                },
+                description: {
+                    fr: `App-Kanban est une application fullstack développée avec React pour le front-end et hébergée sur Cloudflare Pages, avec un back-end Node.js sur Railway. Elle permet de créer et gérer des tableaux Kanban personnalisés pour organiser des tâches, projets ou idées de manière intuitive. L'application propose une interface réactive, fluide et une synchronisation en temps réel pour une gestion de projet simple et efficace.`,
+                    en: `App-Kanban is a full-stack application built with React for the front-end and hosted on Cloudflare Pages, with a Node.js back-end on Railway. It allows users to create and manage custom Kanban boards to organize tasks, projects, or ideas intuitively. The app provides a responsive, smooth interface and real-time synchronization for simple and efficient project management.`
+                },
+                date: 2026,
+                state: "Fini",
+                github: "https://github.com/eden77-rgb/app-kanban",
+                live: "https://9d59f1da.kanban-53y.pages.dev",
+                stacks: [
+                    "React",
+                    "Node.js",
+                    "Tailwind CSS",
+                    "TanStack Router",
+                    "Cloudflare",
+                    "Railway"
+                ],
+                thumbnail: { path: "/assets/kanban/thumbnail.png", alt: "Image miniature du site" },
+                images: [
+                    { path: "/assets/kanban/1.png", alt: "Image du site" },
+                    { path: "/assets/kanban/2.png", alt: "Image du site" },
+                    { path: "/assets/kanban/3.png", alt: "Image du site" }
+                ],
+                features: [
+                {
+                    fr: { content: "Création et gestion de tableaux Kanban personnalisés." },
+                    en: { content: "Create and manage custom Kanban boards." }
+                },
+                {
+                    fr: { content: "Gestion des tâches, listes et projets." },
+                    en: { content: "Task, list, and project management." }
+                },
+                {
+                    fr: { content: "Interface réactive et fluide côté front-end React." },
+                    en: { content: "Smooth and responsive React front-end interface." }
+                },
+                {
+                    fr: { content: "Synchronisation en temps réel des modifications entre utilisateurs." },
+                    en: { content: "Real-time synchronization of changes between users." }
+                },
+                {
+                    fr: { content: "Gestion collaborative des projets avec mise à jour instantanée." },
+                    en: { content: "Collaborative project management with instant updates." }
+                },
+                {
+                    fr: { content: "Hébergement fullstack : front sur Cloudflare Pages, back sur Railway." },
+                    en: { content: "Full-stack deployment: front-end on Cloudflare Pages, back-end on Railway." }
+                }
+                ],
+                defis: [
+                {
+                    fr: { content: "Gestion des conflits lors de modifications simultanées sur le même tableau." },
+                    en: { content: "Handling conflicts when multiple users edit the same board simultaneously." }
+                },
+                {
+                    fr: { content: "Optimisation de la synchronisation temps réel pour maintenir la réactivité." },
+                    en: { content: "Optimizing real-time synchronization to maintain responsiveness." }
+                },
+                {
+                    fr: { content: "Structuration de l'architecture fullstack pour faciliter évolutivité et maintenance." },
+                    en: { content: "Structuring the full-stack architecture for scalability and maintainability." }
+                }
+                ]
+            },
+            */
+        ],
+    },
+    {
+        title: {
+            fr: "Java",
+            en: "Java"
         },
-        { // PageWeaver
-            id: 5,
-            title: "PageWeaver",
-            accroche: "Génération de pages personnalisées à partir d'URL avec système de templates.",
-            description: `PageWeaver est une application serverless développée avec Cloudflare Workers permettant de générer 
-                des pages HTML personnalisées à partir d'une URL. Elle offre un système de templates, de contenus dynamiques 
-                (par IA), et un cache intelligent via KV Namespace.`,
-            date: 2025,
-            state: "Fini",
-            github: "https://github.com/eden77-rgb/PageWeaver",
-            live: "https://pageweaver.eden77-rgb.workers.dev/",
-            stacks: [
-                "HTML",
-                "CSS",
-                "JavaScript",
-                "Cloudflare",
-                "KV Namespace"
-            ],
-            thumbnail: { path: "/assets/pageweaver/thumbnail.png", alt: "Image miniature du site" },
-            images: [
-                { path: "/assets/pageweaver/1.png", alt: "Image du site" },
-                { path: "/assets/pageweaver/2.png", alt: "Image du site" },
-                { path: "/assets/pageweaver/3.png", alt: "Image du site" }
-            ],
-            features: [
-                { content: "Génération dynamique de pages HTML personnalisées à partir d'une URL." },
-                { content: "Système de templates modulables pour mise en page facile." },
-                { content: "Contenu dynamique généré par IA." },
-                { content: "Cache intelligent et persistant via KV Namespace." },
-                { content: "Architecture serverless pour scalabilité et déploiement edge." },
-                { content: "Temps de chargement optimisé pour performance maximale." }
-            ],
-            defis: [
-                { content: "Gestion efficace du cache et invalidation des pages dynamiques." },
-                { content: "Intégration du contenu IA dans un environnement serverless." },
-                { content: "Optimisation des performances et latence pour rendu côté edge." }
-            ]
+        projects: [
+            { // Mod Minecraft
+                id: 8,
+                title: "Mod Minecraft",
+                accroche: {
+                    fr: "Mod Minecraft 1.19.2 ajoutant une ressource Ruby avec minerai, outils et armures craftables.",
+                    en: "Minecraft 1.19.2 mod adding a Ruby resource with ore, tools, and craftable armor."
+                },
+                description: {
+                    fr: `Ce mod développé pour Minecraft 1.19.2 ajoute une nouvelle ressource : le Ruby. Il introduit un minerai généré naturellement, ainsi que des outils, armes, armures et blocs craftables. Conçu pour s'intégrer à la progression vanilla, le mod propose un équilibrage soigné et une expérience fluide en solo comme en multijoueur.`,
+                    en: `This mod developed for Minecraft 1.19.2 adds a new resource: Ruby. It introduces a naturally generated ore, as well as tools, weapons, armor, and craftable blocks. Designed to fit vanilla progression, the mod offers balanced gameplay and a smooth experience in both single-player and multiplayer.`
+                },
+                date: 2025,
+                state: "Fini",
+                github: "https://github.com/eden77-rgb/MinecraftMod",
+                stacks: [
+                    "Java",
+                    "Minecraft Forge"
+                ],
+                thumbnail: { path: "/assets/minecraft/thumbnail.png" },
+                images: [
+                    { path: "/assets/minecraft/1.png", alt: "Image des détails du mod" },
+                    { path: "/assets/minecraft/2.png", alt: "Image en jeu du mod" },
+                    { path: "/assets/minecraft/3.png", alt: "Image en jeu du mod" }
+                ],
+                features: [
+                    {
+                        fr: { content: "Ajout d'un minerai Ruby généré naturellement dans le monde." },
+                        en: { content: "Adds a naturally generated Ruby ore in the world." }
+                    },
+                    {
+                        fr: { content: "Création d'outils, armes et armures craftables à partir du Ruby." },
+                        en: { content: "Adds craftable tools, weapons, and armor made from Ruby." }
+                    },
+                    {
+                        fr: { content: "Introduction de blocs et objets décoratifs liés à la nouvelle ressource." },
+                        en: { content: "Introduces decorative blocks and items related to the new resource." }
+                    },
+                    {
+                        fr: { content: "Intégration fluide à la progression vanilla de Minecraft." },
+                        en: { content: "Seamless integration into Minecraft’s vanilla progression." }
+                    },
+                    {
+                        fr: { content: "Compatibilité avec le mode solo et multijoueur." },
+                        en: { content: "Compatible with both single-player and multiplayer modes." }
+                    },
+                    {
+                        fr: { content: "Équilibrage gameplay pour garantir challenge et cohérence." },
+                        en: { content: "Balanced gameplay ensuring challenge and consistency." }
+                    }
+                ],
+                defis: [
+                    {
+                        fr: { content: "Assurer compatibilité avec le gameplay vanilla et l'écosystème existant." },
+                        en: { content: "Ensure compatibility with vanilla gameplay and existing ecosystem." }
+                    },
+                    {
+                        fr: { content: "Génération procédurale du minerai Ruby dans les mondes Minecraft." },
+                        en: { content: "Procedural generation of Ruby ore in Minecraft worlds." }
+                    },
+                    {
+                        fr: { content: "Maintenir performance et fluidité en multijoueur avec nouveaux items et blocs." },
+                        en: { content: "Maintain performance and smooth multiplayer experience with new items and blocks." }
+                    }
+                ]
+            },
+            { // Postmanman
+                id: 9,
+                title: "PostmanMan",
+                accroche: {
+                    fr: "Développement d'un outil technique reproduisant les fonctionnalités clés de Postman.",
+                    en: "Development of a technical tool replicating key features of Postman."
+                },
+                description: {
+                    fr: `PostmanMan est une application desktop développée en Java avec JavaFX, qui reproduit les fonctionnalités principales de Postman. Elle permet d'envoyer des requêtes HTTP (GET, POST, PUT, PATCH, DELETE), de gérer les headers et le body, et de visualiser les réponses de manière claire et structurée. Le projet met en avant la gestion des appels API, le traitement des données JSON et la conception d'une interface utilisateur interactive et intuitive.`,
+                    en: `PostmanMan is a desktop application developed in Java with JavaFX that replicates the main features of Postman. It allows sending HTTP requests (GET, POST, PUT, PATCH, DELETE), managing headers and request bodies, and visualizing responses in a clear and structured way. The project highlights API request handling, JSON data processing, and the design of an interactive and intuitive user interface.`
+                },
+                date: 2026,
+                state: "Amélioration",
+                github: "https://github.com/eden77-rgb/Postmanman",
+                stacks: [
+                    "Java",
+                    "JavaFX"
+                ],
+                thumbnail: { path: "/assets/postmanman/thumbnail.png" },
+                images: [
+                    { path: "/assets/postmanman/1.png", alt: "Image du logiciel en action" },
+                    { path: "/assets/postmanman/2.png", alt: "Image du logiciel en action" },
+                    { path: "/assets/postmanman/3.png", alt: "Image du logiciel en action" }
+                ],
+                features: [
+                    {
+                        fr: { content: "Envoi de requêtes HTTP : GET, POST, PUT, PATCH, DELETE." },
+                        en: { content: "Send HTTP requests: GET, POST, PUT, PATCH, DELETE." }
+                    },
+                    {
+                        fr: { content: "Gestion complète des headers et du body des requêtes." },
+                        en: { content: "Full management of request headers and body." }
+                    },
+                    {
+                        fr: { content: "Visualisation claire et structurée des réponses JSON." },
+                        en: { content: "Clear and structured JSON response visualization." }
+                    },
+                    {
+                        fr: { content: "Interface desktop interactive et intuitive avec JavaFX." },
+                        en: { content: "Interactive and intuitive desktop UI using JavaFX." }
+                    },
+                    {
+                        fr: { content: "Sauvegarde et organisation des requêtes fréquentes." },
+                        en: { content: "Save and organize frequently used requests." }
+                    },
+                    {
+                        fr: { content: "Workflow modulable pour exploration et test d'API." },
+                        en: { content: "Modular workflow for API exploration and testing." }
+                    }
+                ],
+                defis: [
+                    {
+                        fr: { content: "Parsing efficace des réponses JSON complexes pour affichage." },
+                        en: { content: "Efficient parsing of complex JSON responses for display." }
+                    },
+                    {
+                        fr: { content: "Gestion des erreurs et timeout des requêtes HTTP." },
+                        en: { content: "Handling HTTP errors and request timeouts." }
+                    },
+                    {
+                        fr: { content: "Conception d'une interface modulable et ergonomique pour desktop." },
+                        en: { content: "Designing a modular and ergonomic desktop interface." }
+                    }
+                ]
+            }
+        ],
+    },
+    {
+        title: {
+            fr: "Autre",
+            en: "Other"
         },
-        { // SiteLink
-            id: 6,
-            title: "Sitelink",
-            accroche: "Alternative moderne à Linktree avec architecture edge-first et temps de chargement minimal.",
-            description: `Sitelink (SachaSLM) est une application serverless développée avec Cloudflare Workers, conçue comme 
-                une alternative moderne à Linktree pour les streamers. Elle permet de créer et partager rapidement une page de 
-                liens personnalisée, regroupant réseaux sociaux, plateformes de streaming et contenus divers. L'application 
-                propose un design minimaliste, une gestion dynamique des liens et un chargement ultra-rapide`,
-            date: 2026,
-            state: "En cours",
-            github: "https://github.com/eden77-rgb/SachaSLM",
-            live: "https://sachaslm.eden77-rgb.workers.dev/",
-            stacks: [
-                "HTML",
-                "CSS",
-                "JavaScript"
-            ],
-            thumbnail: { path: "/assets/sitelink/thumbnail.png", alt: "Image miniature du site" },
-            images: [
-                { path: "/assets/sitelink/1.png", alt: "Image du site" },
-                { path: "/assets/sitelink/2.png", alt: "Image du site" },
-                { path: "/assets/sitelink/3.png", alt: "Image du site" }
-            ],
-            features: [
-                { content: "Création et partage rapide de pages de liens personnalisées." },
-                { content: "Gestion dynamique des liens : ajout, modification, suppression." },
-                { content: "Regroupement de réseaux sociaux, plateformes de streaming et contenus divers." },
-                { content: "Interface minimaliste et responsive pour une expérience utilisateur optimale." },
-                { content: "Déploiement serverless sur Cloudflare Workers pour chargement ultra-rapide." },
-                { content: "Architecture edge-first pour performance et scalabilité." }
-            ],
-            defis: [
-                { content: "Gestion de la persistance et synchronisation des liens côté serverless." },
-                { content: "Optimisation du temps de chargement pour expérience ultra-rapide." },
-                { content: "Conception d'une interface responsive adaptée à différents appareils." }
-            ]
-        },
-        { // Kanban
-            id: 7,
-            title: "Kanban",
-            accroche: "Application kanban fullstack avec React front-end / Node.js back-end sur Railway et Cloudflare Pages.",
-            description: `App-Kanban est une application fullstack développée avec React pour le front-end et hébergée sur 
-                Cloudflare Pages, avec un back-end Node.js sur Railway. Elle permet de créer et gérer des tableaux Kanban 
-                personnalisés pour organiser des tâches, projets ou idées de manière intuitive. L'application propose une 
-                interface réactive, fluide et une synchronisation en temps réel pour une gestion de projet simple et efficace.`,
-            date: 2026,
-            state: "Fini",
-            github: "https://github.com/eden77-rgb/app-kanban",
-            live: "https://9d59f1da.kanban-53y.pages.dev",
-            stacks: [
-                "React",
-                "Node.js",
-                "Tailwind CSS",
-                "TanStack Router",
-                "Cloudflare",
-                "Railway"
-            ],
-            thumbnail: { path: "/assets/kanban/thumbnail.png", alt: "Image miniature du site" },
-            images: [
-                { path: "/assets/kanban/1.png", alt: "Image du site" },
-                { path: "/assets/kanban/2.png", alt: "Image du site" },
-                { path: "/assets/kanban/3.png", alt: "Image du site" }
-            ],
-            features: [
-                { content: "Création et gestion de tableaux Kanban personnalisés." },
-                { content: "Gestion des tâches, listes et projets." },
-                { content: "Interface réactive et fluide côté front-end React." },
-                { content: "Synchronisation en temps réel des modifications entre utilisateurs." },
-                { content: "Gestion des projets par utilisateur avec mise à jour collaborative en temps réel." },
-                { content: "Hébergement fullstack : front sur Cloudflare Pages, back sur Railway." }
-            ],
-            defis: [
-                { content: "Gestion des conflits lors de modifications simultanées sur le même tableau." },
-                { content: "Optimisation de la synchronisation temps réel pour maintenir réactivité." },
-                { content: "Structuration de l'architecture fullstack pour faciliter évolutivité et maintenance." }
-            ]
-        },
-    ],
-    "Java": [
-        { // Mod Minecraft
-            id: 8,
-            title: "Mod Minecraft",
-            accroche: "Mod Minecraft 1.19.2 ajoutant une ressource Ruby avec minerai, outils et armures craftables.",
-            description: `Ce mod développé pour Minecraft 1.19.2, ajoute une nouvelle ressource : le Ruby. 
-                Il introduit un minerai généré naturellement, ainsi que des outils, armes, armures et blocs craftables. 
-                Conçu pour s'intégrer à la progression vanilla, le mod propose un équilibrage soigné et une expérience fluide 
-                en solo comme en multijoueur.`,
-            date: 2025,
-            state: "Fini",
-            github: "https://github.com/eden77-rgb/MinecraftMod",
-            stacks: [
-                "Java",
-                "Minecraft Forge"
-            ],
-            thumbnail: { path: "/assets/minecraft/thumbnail.png" },
-            images: [
-                { path: "/assets/minecraft/1.png", alt: "Image des détails du mod" },
-                { path: "/assets/minecraft/2.png", alt: "Image en jeu du mod" },
-                { path: "/assets/minecraft/3.png", alt: "Image en jeu du mod" }
-            ],
-            features: [
-                { content: "Ajout d'un minerai Ruby généré naturellement dans le monde." },
-                { content: "Création d'outils, armes et armures craftables à partir du Ruby." },
-                { content: "Introduction de blocs et objets décoratifs liés à la nouvelle ressource." },
-                { content: "Intégration fluide à la progression vanilla de Minecraft." },
-                { content: "Compatibilité avec le mode solo et multijoueur." },
-                { content: "Équilibrage gameplay pour garantir challenge et cohérence." }
-            ],
-            defis: [
-                { content: "Assurer compatibilité avec le gameplay vanilla et l'écosystème existant." },
-                { content: "Génération procédurale du minerai Ruby dans les mondes Minecraft." },
-                { content: "Maintenir performance et fluidité en multijoueur avec nouveaux items et blocs." }
-            ]
-        },
-        { // Postmanman
-            id: 9,
-            title: "PostmanMan",
-            accroche: "Développement d'un outil technique reproduisant les fonctionnalités clés de Postman.",
-            description: `PostmanMan est une application desktop développée en Java avec JavaFX, qui reproduit les 
-                fonctionnalités principales de Postman. Elle permet d'envoyer des requêtes HTTP (GET, POST, PUT, PATCH, DELETE), 
-                de gérer les headers et le body, et de visualiser les réponses de manière claire et structurée. Le projet 
-                met en avant la gestion des appels API, le traitement des données JSON et la conception d'une interface 
-                utilisateur interactive et intuitive.`,
-            date: 2026,
-            state: "Amélioration",
-            github: "https://github.com/eden77-rgb/Postmanman",
-            stacks: [
-                "Java",
-                "JavaFX"
-            ],
-            thumbnail: { path: "/assets/postmanman/thumbnail.png" },
-            images: [
-                { path: "/assets/postmanman/1.png", alt: "Image du logiciel en action" },
-                { path: "/assets/postmanman/2.png", alt: "Image du logiciel en action" },
-                { path: "/assets/postmanman/3.png", alt: "Image du logiciel en action" }
-            ],
-            features: [
-                { content: "Envoi de requêtes HTTP : GET, POST, PUT, PATCH, DELETE." },
-                { content: "Gestion complète des headers et du body des requêtes." },
-                { content: "Visualisation claire et structurée des réponses JSON." },
-                { content: "Interface desktop interactive et intuitive avec JavaFX." },
-                { content: "Sauvegarde et organisation des requêtes fréquentes." },
-                { content: "Workflow modulable pour exploration et test d'API." }
-            ],
-            defis: [
-                { content: "Parsing efficace des réponses JSON complexes pour affichage." },
-                { content: "Gestion des erreurs et timeout des requêtes HTTP." },
-                { content: "Conception d'une interface modulable et ergonomique pour desktop." }
-            ]
-        }
-    ],
-    "Autre": [
-        { // Flutter
-            id: 10,
-            title: "Baker'eat",
-            accroche: "Application mobile Flutter pour découverte et commande de produits boulangerie/pâtisserie.",
-            description: `Baker'eat est une application mobile développée en Flutter, dédiée à la découverte et à la 
-                commande de produits de boulangerie et pâtisserie. Elle permet aux utilisateurs de parcourir les catalogues, 
-                rechercher des produits, passer commande et suivre leurs achats en temps réel. L'application met en avant 
-                la gestion d'API REST, l'authentification des utilisateurs, la gestion d'état, ainsi que la conception d'une 
-                interface fluide, moderne et responsive adaptée aux environnements Android et iOS.`,
-            date: 2025,
-            state: "Fini",
-            github: "https://github.com/eden77-rgb/Baker-eat",
-            stacks: [
-                "Flutter",
-                "Node.js",
-                "MySQL",
-                "Railway"
-            ],
-            thumbnail: { path: "/assets/baker-eat/thumbnail.png", alt: "Image d'accueil de l'application" },
-            images: [
-                { path: "/assets/baker-eat/1.png", alt: "Image de l'application" },
-                { path: "/assets/baker-eat/2.png", alt: "Image de l'application" },
-                { path: "/assets/baker-eat/3.png", alt: "Image de l'application" }
-            ],
-            features: [
-                { content: "Parcours et recherche de produits de boulangerie et pâtisserie." },
-                { content: "Gestion des commandes et suivi en temps réel." },
-                { content: "Authentification sécurisée des utilisateurs." },
-                { content: "Gestion d'état avancée pour interface réactive." },
-                { content: "Interface moderne, fluide et responsive sur Android et iOS." },
-                { content: "Intégration d'API REST pour catalogue et traitement des commandes." }
-            ],
-            defis: [
-                { content: "Synchronisation en temps réel entre commandes et interface utilisateur." },
-                { content: "Conception d'une UI performante et fluide sur différents appareils mobiles." },
-                { content: "Sécurisation des données utilisateur et authentification fiable." }
-            ]
-        },
-        { // Masamune 
-            id: 11,
-            title: "Masamune Fighting",
-            accroche: "Jeu de combat 1v1 local inspiré des titres type Smash, avec écran partagé.",
-            description: `Masamune Fighting est un jeu de combat 1v1 en local, inspiré de l'univers des jeux type Smash, 
-                jouable sur le même PC en écran partagé. Le jeu propose des affrontements dynamiques avec des personnages 
-                aux compétences uniques, un système de dégâts progressifs et des mécaniques de knockback stratégiques. Le 
-                projet met en avant la gestion des inputs multiples (clavier/manettes), la détection de collisions, la 
-                physique de combat, ainsi que la conception d'un gameplay fluide et compétitif centré sur l'expérience 
-                multijoueur locale.`,
-            date: 2025,
-            state: "Fini",
-            github: "https://github.com/eden77-rgb/DigitalGamingFinal",
-            stacks: [
-                "C#",
-                "Unity"
-            ],
-            thumbnail: { path: "/assets/masamune/thumbnail.png", alt: "Image d'accueil de l'application" },
-            images: [
-                { path: "/assets/masamune/1.png", alt: "Image de l'application" },
-                { path: "/assets/masamune/2.png", alt: "Image de l'application" }
-            ],
-            features: [
-                { content: "Affrontements 1v1 sur le même PC." },
-                { content: "Personnages avec compétences uniques et attaques spécifiques." },
-                { content: "Système de dégâts progressifs et mécaniques de knockback." },
-                { content: "Gestion des inputs multiples : clavier et manettes." },
-                { content: "Détection de collisions et physique de combat optimisée." },
-                { content: "Gameplay fluide et équilibré centré sur l'expérience multijoueur locale." }
-            ],
-            defis: [
-                { content: "Implémenter des mécaniques de combat précises et réactives." },
-                { content: "Synchronisation des inputs multiples sans latence perceptible." },
-                { content: "Gestion des collisions et knockback pour fluidité et équilibrage du gameplay." }
-            ]
-        }
-    ]
-}
+        projects: [
+            { // Flutter
+                id: 10,
+                title: "Baker'eat",
+                accroche: {
+                    fr: "Application mobile Flutter pour découverte et commande de produits boulangerie/pâtisserie.",
+                    en: "Flutter mobile application for discovering and ordering bakery and pastry products."
+                },
+                description: {
+                    fr: `Baker'eat est une application mobile développée en Flutter, dédiée à la découverte et à la commande de produits de boulangerie et pâtisserie. Elle permet aux utilisateurs de parcourir les catalogues, rechercher des produits, passer commande et suivre leurs achats en temps réel. L'application met en avant la gestion d'API REST, l'authentification des utilisateurs, la gestion d'état, ainsi que la conception d'une interface fluide, moderne et responsive adaptée aux environnements Android et iOS.`,
+                    en: `Baker'eat is a mobile application developed with Flutter, dedicated to discovering and ordering bakery and pastry products. It allows users to browse catalogs, search for products, place orders, and track their purchases in real time. The app highlights REST API integration, user authentication, state management, and the design of a smooth, modern, and responsive interface adapted to both Android and iOS environments.`
+                },
+                date: 2025,
+                state: "Fini",
+                github: "https://github.com/eden77-rgb/Baker-eat",
+                stacks: [
+                    "Flutter",
+                    "Node.js",
+                    "MySQL",
+                    "Railway"
+                ],
+                thumbnail: { path: "/assets/baker-eat/thumbnail.png", alt: "Image d'accueil de l'application" },
+                images: [
+                    { path: "/assets/baker-eat/1.png", alt: "Image de l'application" },
+                    { path: "/assets/baker-eat/2.png", alt: "Image de l'application" },
+                    { path: "/assets/baker-eat/3.png", alt: "Image de l'application" }
+                ],
+                features: [
+                    {
+                        fr: { content: "Parcours et recherche de produits de boulangerie et pâtisserie." },
+                        en: { content: "Browse and search bakery and pastry products." }
+                    },
+                    {
+                        fr: { content: "Gestion des commandes et suivi en temps réel." },
+                        en: { content: "Order management and real-time tracking." }
+                    },
+                    {
+                        fr: { content: "Authentification sécurisée des utilisateurs." },
+                        en: { content: "Secure user authentication." }
+                    },
+                    {
+                        fr: { content: "Gestion d'état avancée pour interface réactive." },
+                        en: { content: "Advanced state management for a reactive UI." }
+                    },
+                    {
+                        fr: { content: "Interface moderne, fluide et responsive sur Android et iOS." },
+                        en: { content: "Modern, smooth, and responsive interface for Android and iOS." }
+                    },
+                    {
+                        fr: { content: "Intégration d'API REST pour catalogue et traitement des commandes." },
+                        en: { content: "REST API integration for catalog and order processing." }
+                    }
+                ],
+                defis: [
+                    {
+                        fr: { content: "Synchronisation en temps réel entre commandes et interface utilisateur." },
+                        en: { content: "Real-time synchronization between orders and UI." }
+                    },
+                    {
+                        fr: { content: "Conception d'une UI performante et fluide sur différents appareils mobiles." },
+                        en: { content: "Designing a smooth and high-performance UI across devices." }
+                    },
+                    {
+                        fr: { content: "Sécurisation des données utilisateur et authentification fiable." },
+                        en: { content: "Securing user data and ensuring reliable authentication." }
+                    }
+                ]
+            },
+            { // Masamune 
+                id: 11,
+                title: "Masamune Fighting",
+                accroche: {
+                    fr: "Jeu de combat 1v1 local inspiré des titres type Smash, avec écran partagé.",
+                    en: "Local 1v1 fighting game inspired by Smash-style titles with split-screen gameplay."
+                },
+                description: {
+                    fr: `Masamune Fighting est un jeu de combat 1v1 en local, inspiré de l'univers des jeux type Smash, jouable sur le même PC en écran partagé. Le jeu propose des affrontements dynamiques avec des personnages aux compétences uniques, un système de dégâts progressifs et des mécaniques de knockback stratégiques. Le projet met en avant la gestion des inputs multiples (clavier/manettes), la détection de collisions, la physique de combat, ainsi que la conception d'un gameplay fluide et compétitif centré sur l'expérience multijoueur locale.`,
+                    en: `Masamune Fighting is a local 1v1 fighting game inspired by Smash-style games, playable on the same PC with split-screen gameplay. It features dynamic battles with characters that have unique abilities, a progressive damage system, and strategic knockback mechanics. The project focuses on multi-input handling (keyboard/controllers), collision detection, combat physics, and the design of a smooth and competitive gameplay experience centered on local multiplayer.`
+                },
+                date: 2025,
+                state: "Fini",
+                github: "https://github.com/eden77-rgb/DigitalGamingFinal",
+                stacks: [
+                    "C#",
+                    "Unity"
+                ],
+                thumbnail: { path: "/assets/masamune/thumbnail.png", alt: "Image d'accueil de l'application" },
+                images: [
+                    { path: "/assets/masamune/1.png", alt: "Image de l'application" },
+                    { path: "/assets/masamune/2.png", alt: "Image de l'application" }
+                ],
+                features: [
+                    {
+                        fr: { content: "Affrontements 1v1 sur le même PC." },
+                        en: { content: "Local 1v1 matches on the same PC." }
+                    },
+                    {
+                        fr: { content: "Personnages avec compétences uniques et attaques spécifiques." },
+                        en: { content: "Characters with unique abilities and attacks." }
+                    },
+                    {
+                        fr: { content: "Système de dégâts progressifs et mécaniques de knockback." },
+                        en: { content: "Progressive damage system and knockback mechanics." }
+                    },
+                    {
+                        fr: { content: "Gestion des inputs multiples : clavier et manettes." },
+                        en: { content: "Multi-input handling: keyboard and controllers." }
+                    },
+                    {
+                        fr: { content: "Détection de collisions et physique de combat optimisée." },
+                        en: { content: "Optimized collision detection and combat physics." }
+                    },
+                    {
+                        fr: { content: "Gameplay fluide et équilibré centré sur l'expérience multijoueur locale." },
+                        en: { content: "Smooth and balanced gameplay focused on local multiplayer experience." }
+                    }
+                ],
+                defis: [
+                    {
+                        fr: { content: "Implémenter des mécaniques de combat précises et réactives." },
+                        en: { content: "Implement precise and responsive combat mechanics." }
+                    },
+                    {
+                        fr: { content: "Synchronisation des inputs multiples sans latence perceptible." },
+                        en: { content: "Synchronize multiple inputs without noticeable latency." }
+                    },
+                    {
+                        fr: { content: "Gestion des collisions et knockback pour fluidité et équilibrage du gameplay." },
+                        en: { content: "Handle collisions and knockback for smooth and balanced gameplay." }
+                    }
+                ]
+            }
+        ]
+    }
+]

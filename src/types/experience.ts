@@ -18,7 +18,7 @@ export type Type =
     | "Formation"
     | "Certification"
 
-export type DateValue = string | number
+export type DateValue = Lang<string | number>
 
 export type DateRange = {
     start: DateValue,
@@ -34,14 +34,19 @@ export type Task = {
     content: string
 }
 
+export type Lang<T> = {
+    fr: T,
+    en: T
+}
+
 export type Experience = {
     id: number,
     type: Type,
-    title: string,
+    title: Lang<string>,
     company: string,
     date: DateRange,
     location: Location,
-    tasks?: Task[],
+    tasks?: Lang<Task>[],
     stacks?: Stack[],
     link?: string,
     download?: { path: string }
