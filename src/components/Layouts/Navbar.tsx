@@ -1,9 +1,12 @@
+import { useLanguage } from "@/contexts"
 import { Download, Languages, Moon, Share2, Sun } from "lucide-react"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 const NavBar = () => {
-    const [language, setLanguage] = useState<"EN" | "FR">("FR")
+    const { lang, setLang } = useLanguage()
     const [isDark, setIsDark] = useState(true)
+
+    useEffect(() => { console.log("[DEBUG]: lang: ", lang) }, [lang])
 
     return (
         <nav className="fixed top-6 right-6 z-50 flex items-center gap-3">
@@ -12,9 +15,9 @@ const NavBar = () => {
 
                 <div className="flex items-center gap-1 ml-2">
                     <button
-                        onClick={() => { setLanguage('FR') }}
+                        onClick={() => { setLang('FR') }}
                         className={`px-2 py-1 rounded-md text-sm font-medium transition-all 
-                        ${language == "FR"
+                        ${lang == "FR"
                                 ? "text-emerald-400 bg-emerald-500/20"
                                 : "text-gray-400 hover:text-emerald-300"
                             }`}
@@ -25,9 +28,9 @@ const NavBar = () => {
                     <span className="text-gray-600">|</span>
 
                     <button
-                        onClick={() => { setLanguage('EN') }}
+                        onClick={() => { setLang('EN') }}
                         className={`px-2 py-1 rounded-md text-sm font-medium transition-all 
-                        ${language == "EN"
+                        ${lang == "EN"
                                 ? "text-emerald-400 bg-emerald-500/20"
                                 : "text-gray-400 hover:text-emerald-300"
                             }`}

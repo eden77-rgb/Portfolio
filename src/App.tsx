@@ -1,15 +1,15 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
 import { MainPage, ProjectPage } from "./pages"
-import Navbar from "@/components/Layouts/Navbar"
-import ScrollProgress from "@/components/Layouts/ScrollProgress"
+import { Navbar, ScrollProgress } from "@/components/Layouts/"
+import { LanguageProvider } from "./contexts"
 
 
 function App() {
     return (
-        <>
+        <LanguageProvider>
             <BrowserRouter>
                 <Navbar />
-                <ScrollProgress />  
+                <ScrollProgress />
 
                 <Routes>
                     <Route path="/" element={<MainPage />} />
@@ -17,7 +17,7 @@ function App() {
                     <Route path="*" element={<Navigate to="/" replace />} />
                 </Routes>
             </BrowserRouter>
-        </>
+        </LanguageProvider>
     )
 }
 
