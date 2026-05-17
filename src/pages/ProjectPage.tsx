@@ -55,7 +55,7 @@ export function ProjectPage() {
 
             <ProjectDefis defis={project.defis} />
 
-            <GoBackButton />
+            <GoBackButton content="Retour à l'accueil" />
         </div>
     )
 }

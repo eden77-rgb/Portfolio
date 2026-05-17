@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
 
-const GoBackButton = () => {
+const GoBackButton = ({ content }: { content: string }) => {
     const navigate = useNavigate();
 
     return (
@@ -12,7 +12,7 @@ const GoBackButton = () => {
             >
                 <ArrowLeft className="w-6 h-6 transition-transform group-hover:-translate-x-2" />
 
-                <span>Retour à l'accueil</span>
+                <span>{content}</span>
             </button>
         </div>
     )

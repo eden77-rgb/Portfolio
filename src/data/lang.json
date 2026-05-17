@@ -2,93 +2,150 @@
     "MainPage": {
         "HeroSection": {
             "jobTitle": {
-                "fr": "Développeur Full Stack & IA",
-                "en": "Full Stack & AI Developer"
+                "FR": "Développeur Full Stack & IA",
+                "EN": "Full Stack & AI Developer"
             },
 
             "jobDescription": {
-                "fr": "Conception d'applications élégantes performantes modernes et innovantes. {'\n'}  Passionné par le design interactif et le développement innovant et polyvalent agile",
-                "en": "Designing elegant, high-performance, modern, and innovative applications. {'\n'} Passionate about interactive design, as well as innovative, versatile, and agile development."
+                "FR": "Conception d'applications élégantes performantes modernes et innovantes. {'\n'}  Passionné par le design interactif et le développement innovant et polyvalent agile",
+                "EN": "Designing elegant, high-performance, modern, and innovative applications. {'\n'} Passionate about interactive design, as well as innovative, versatile, and agile development."
             },
 
             "projectButton": {
-                "fr": "Mes projets",
-                "en": "View my work"
+                "FR": "Mes projets",
+                "EN": "View my work"
             },
 
             "contactButton": {
-                "fr": "Me contacter",
-                "en": "Get in touch"
+                "FR": "Me contacter",
+                "EN": "Get in touch"
             }
         },
 
         "ExperiencesSection": {
             "sectionTitle": {
-                "fr": "Parcours Professionnel",
-                "en": "Professional Experience"
+                "FR": "Parcours Professionnel",
+                "EN": "Professional Experience"
             },
 
             "sectionDescription": {
-                "fr": "Expérience, Formation et Certifications",
-                "en": "Experience, Education & Certifications"
+                "FR": "Expérience, Formation et Certifications",
+                "EN": "Experience, Education & Certifications"
+            },
+
+            "certificationsButton": {
+                "FR": "Voir la certification",
+                "EN": "View the certification"
+            },
+
+            "telechargementButton": {
+                "FR": "Télécharger",
+                "EN": "Download"
             }
         },
 
         "ContactSection": {
             "sectionTitle": {
-                "fr": "Travaillons ensemble",
-                "en": "Let's Work Together"
+                "FR": "Travaillons ensemble",
+                "EN": "Let's Work Together"
             },
 
             "sectionDescription": {
-                "fr": "Un projet en tête ? Créons quelque chose d'incroyable ensemble.",
-                "en": "Have a project in mind? Let's create something amazing together."
+                "FR": "Un projet en tête ? Créons quelque chose d'incroyable ensemble.",
+                "EN": "Have a project in mind? Let's create something amazing together."
             },
 
             "contactInfoTitle": {
-                "fr": "Me contacter",
-                "en": "Get In Touch"
+                "FR": "Me contacter",
+                "EN": "Get In Touch"
             },
 
             "contactInfoDescription": {
-                "fr": "Me suivre sur",
-                "en": "Follow me on"
+                "FR": "Me suivre sur",
+                "EN": "Follow me on"
             },
 
             "contactFormTitle": {
-                "fr": "Envoyer un message",
-                "en": "Send a Message"
+                "FR": "Envoyer un message",
+                "EN": "Send a Message"
             },
 
             "contactFormNameLabel": {
-                "fr": "Nom",
-                "en": "Name"
+                "FR": "Nom",
+                "EN": "Name"
             },
 
             "contactFormNamePlaceholder": {
-                "fr": "Votre nom",
-                "en": "Your name"
+                "FR": "Votre nom",
+                "EN": "Your name"
             },
 
             "contactFormEmailLabel": {
-                "fr": "Email",
-                "en": "Email"
+                "FR": "Email",
+                "EN": "Email"
             },
 
             "contactFormEmailPlaceholder": {
-                "fr": "votre.email@exemple.com",
-                "en": "your.email@exemple.com"
+                "FR": "votre.email@exemple.com",
+                "EN": "your.email@exemple.com"
             },
 
             "contactFormMessageLabel": {
-                "fr": "Message",
-                "en": "Message"
+                "FR": "Message",
+                "EN": "Message"
             },
 
             "contactFormMessagePlaceholder": {
-                "fr": "Parlez-moi de votre projet...",
-                "en": "Tell me about your project..."
+                "FR": "Parlez-moi de votre projet...",
+                "EN": "Tell me about your project..."
+            },
+
+            "messageButton": {
+                "FR": "Envoyer le message",
+                "EN": "Send the message"
+            },
+
+            "errorMessage": {
+                "FR": "Veuillez remplir tous les champs.",
+                "EN": "Please fill in all the fields."
+            },
+
+            "successMessage": {
+                "FR": "Votre message a bien été envoyé.",
+                "EN": "Your message has been sent."
             }
+        }
+    },
+
+    "ProjectPage": {
+        "aboutTitle": {
+            "FR": "À propos du projet",
+            "EN": "About the project"
+        },
+
+        "videoTitle": {
+            "FR": "Démonstration vidéo",
+            "EN": "Video demonstration"
+        },
+
+        "imageTitle": {
+            "FR": "Galerie d'images",
+            "EN": "Image Gallery"
+        },
+
+        "featureTitle": {
+            "FR": "Fonctionnalités principales",
+            "EN": "Key Features"
+        },
+
+        "defiTitle": {
+            "FR": "Défis techniques",
+            "EN": "Technical challenges"
+        },
+
+        "goBackButton": {
+            "FR": "Retour à l'accueil",
+            "EN": "Go back to home"
         }
     }
 }
