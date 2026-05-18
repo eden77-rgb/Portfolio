@@ -7,8 +7,8 @@
             },
 
             "jobDescription": {
-                "FR": "Conception d'applications élégantes performantes modernes et innovantes. {'\n'}  Passionné par le design interactif et le développement innovant et polyvalent agile",
-                "EN": "Designing elegant, high-performance, modern, and innovative applications. {'\n'} Passionate about interactive design, as well as innovative, versatile, and agile development."
+                "FR": "Conception d'applications élégantes performantes modernes et innovantes. Passionné par le design interactif et le développement innovant et polyvalent agile",
+                "EN": "Designing elegant, high-performance, modern, and innovative applications. Passionate about interactive design, as well as innovative, versatile, and agile development."
             },
 
             "projectButton": {
@@ -105,9 +105,24 @@
                 "EN": "Send the message"
             },
 
-            "errorMessage": {
+            "messageButtonLoading": {
+                "FR": "Envoi en cours...",
+                "EN": "Sending..."
+            },
+
+            "missingErrorMessage": {
                 "FR": "Veuillez remplir tous les champs.",
                 "EN": "Please fill in all the fields."
+            },
+
+            "duringErrorMessage": {
+                "FR": "Une erreur est survenue",
+                "EN": "An error has occurred"
+            },
+
+            "unableErrorMessage": {
+                "FR": "Impossible d'envoyer le message.",
+                "EN": "Unable to send the message."
             },
 
             "successMessage": {
@@ -118,6 +133,16 @@
     },
 
     "ProjectPage": {
+        "deployButton": {
+            "FR": "Voir la démo",
+            "EN": "Watch the demo"
+        },
+
+        "githubButton": {
+            "FR": "Code source",
+            "EN": "Source code"
+        },
+
         "aboutTitle": {
             "FR": "À propos du projet",
             "EN": "About the project"

@@ -1,9 +1,15 @@
 import type { ContactInfoProps, Item, Social } from "@/types"
+import langJSON from "@/data/lang.json"
+import { useLanguage } from "@/contexts"
 
 const ContactInfo = ({ items, socials }: ContactInfoProps) => {
+    const { lang } = useLanguage()
+
     return (
         <div className="bg-zinc-900/60 border border-zinc-800 rounded-2xl p-8 flex flex-col gap-8">
-            <h3 className="text-xl font-bold text-white">Me contacter</h3>
+            <h3 className="text-xl font-bold text-white">
+                {langJSON.MainPage.ContactSection.contactInfoTitle[lang]}
+            </h3>
 
             <div className="flex flex-col gap-5">
                 {items.map(({ icon, label, value, href }: Item) => (
@@ -30,7 +36,9 @@ const ContactInfo = ({ items, socials }: ContactInfoProps) => {
             <div className="border-t border-zinc-800" />
 
             <div>
-                <p className="text-sm text-zinc-500 mb-4">Me suivre sur</p>
+                <p className="text-sm text-zinc-500 mb-4">
+                    {langJSON.MainPage.ContactSection.contactInfoDescription[lang]}
+                </p>
                 <div className="flex gap-3">
                     {socials.map(({ icon, label, href }: Social) => (
                         <a

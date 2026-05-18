@@ -1,8 +1,11 @@
 import type { ProjectCardProps } from "@/types";
 import { ProjectStack } from "@/components/common";
 import { Link } from "react-router-dom";
+import { useLanguage } from "@/contexts";
 
 const ProjectCard = ({ projet }: ProjectCardProps) => {
+    const { lang } = useLanguage()
+    
     return (
         <Link to={`/project/${projet.id}`} className="h-full">
             <div className="h-full flex flex-col bg-[#0a0a0a] border border-gray-800 rounded-2xl overflow-hidden hover:border-emerald-500/50 transition-colors duration-300 group">
@@ -19,7 +22,7 @@ const ProjectCard = ({ projet }: ProjectCardProps) => {
                         {projet.title}
                     </h2>
                     <p className="text-gray-400 mb-6 line-clamp-2">
-                        {projet.accroche.fr.length > 100 ? projet.accroche.fr.slice(0, 100) + "..." : projet.accroche.fr}
+                        {projet.accroche[lang].length > 100 ? projet.accroche[lang].slice(0, 100) + "..." : projet.accroche[lang]}
                     </p>
 
                     <div className="flex flex-wrap gap-2 mt-auto">

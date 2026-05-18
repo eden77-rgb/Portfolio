@@ -1,6 +1,10 @@
+import { useLanguage } from "@/contexts"
 import HeroAction from "./HeroAction"
+import langJSON from "@/data/lang.json"
 
 const HeroContent = () => {
+    const { lang } = useLanguage()
+
     return (
         <>
             <section className="h-screen w-full flex items-center justify-center flex-col px-4">
@@ -15,11 +19,11 @@ const HeroContent = () => {
                     </h1>
 
                     <h2 className="text-2xl md:text-4xl lg:text-5xl font-light tracking-wider mb-6 text-gray-100 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-                        Développeur Full Stack & IA
+                        {langJSON.MainPage.HeroSection.jobTitle[lang]}
                     </h2>
 
                     <p className="text-base md:text-lg lg:text-xl text-gray-400 max-w-2xl mx-auto mb-12 leading-relaxed animate-fade-in" style={{ animationDelay: '0.4s' }}>
-                        Conception d'applications élégantes performantes modernes et innovantes. {"\n"} Passionné par le design interactif et le développement innovant et polyvalent agile
+                        {langJSON.MainPage.HeroSection.jobDescription[lang]}
                     </p>
                 </div>
 

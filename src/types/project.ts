@@ -20,8 +20,8 @@ export type Defis = {
 }
 
 export type Lang<T> = {
-    fr: T,
-    en: T
+    FR: T,
+    EN: T
 }
 
 export type Project = {

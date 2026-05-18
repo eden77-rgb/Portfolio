@@ -1,8 +1,12 @@
 import { useState } from "react"
 import { SubmitButton } from "@/components/Button"
 import type { ContactMessage } from "../../../worker/types"
+import langJSON from "@/data/lang.json"
+import { useLanguage } from "@/contexts"
 
 const ContactForm = () => {
+    const { lang } = useLanguage()
+
     const [form, setForm] = useState<ContactMessage>({ name: "", email: "", message: "" })
 
     const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle")
@@ -20,7 +24,7 @@ const ContactForm = () => {
     const handleSubmit = async () => {
         if (!form.name || !form.email || !form.message) {
             setStatus("error")
-            setErrorMessage("Veuillez remplir tous les champs.")
+            setErrorMessage(langJSON.MainPage.ContactSection.missingErrorMessage[lang])
 
             return
         }
@@ -37,7 +41,7 @@ const ContactForm = () => {
             const data = await response.json()
 
             if (!response.ok) {
-                throw new Error(data.error || "Une erreur est survenue")
+                throw new Error(data.error || langJSON.MainPage.ContactSection.duringErrorMessage[lang])
             }
 
 
@@ -54,26 +58,29 @@ const ContactForm = () => {
                 setErrorMessage(error.message);
 
             } else {
-                setErrorMessage("Impossible d'envoyer le message.");
+                setErrorMessage(langJSON.MainPage.ContactSection.unableErrorMessage[lang]);
             }
         }
 
-
-        console.log("Form submitted:", form)
+        // console.log("Form submitted:", form)
     }
 
 
     return (
         <div className="bg-zinc-900/60 border border-zinc-800 rounded-2xl p-8 flex flex-col gap-6 h-full">
-            <h3 className="text-xl font-bold text-white">Envoyer un message</h3>
+            <h3 className="text-xl font-bold text-white">
+                {langJSON.MainPage.ContactSection.contactFormTitle[lang]}
+            </h3>
 
             <div className="flex flex-col gap-5 flex-1">
                 <div className="flex flex-col gap-2">
-                    <label className="text-sm font-semibold text-zinc-300">Nom</label>
+                    <label className="text-sm font-semibold text-zinc-300">
+                        {langJSON.MainPage.ContactSection.contactFormNameLabel[lang]}
+                    </label>
                     <input
                         type="text"
                         name="name"
-                        placeholder="Votre nom"
+                        placeholder={langJSON.MainPage.ContactSection.contactFormNamePlaceholder[lang]}
                         value={form.name}
                         onChange={handleChange}
                         disabled={status == "loading"}
@@ -82,11 +89,13 @@ const ContactForm = () => {
                 </div>
 
                 <div className="flex flex-col gap-2">
-                    <label className="text-sm font-semibold text-zinc-300">Email</label>
+                    <label className="text-sm font-semibold text-zinc-300">
+                        {langJSON.MainPage.ContactSection.contactFormEmailLabel[lang]}
+                    </label>
                     <input
                         type="email"
                         name="email"
-                        placeholder="votre.email@exemple.com"
+                        placeholder={langJSON.MainPage.ContactSection.contactFormEmailPlaceholder[lang]}
                         value={form.email}
                         onChange={handleChange}
                         disabled={status == "loading"}
@@ -95,10 +104,12 @@ const ContactForm = () => {
                 </div>
 
                 <div className="flex flex-col gap-2">
-                    <label className="text-sm font-semibold text-zinc-300">Message</label>
+                    <label className="text-sm font-semibold text-zinc-300">
+                        {langJSON.MainPage.ContactSection.contactFormMessageLabel[lang]}
+                    </label>
                     <textarea
                         name="message"
-                        placeholder="Parlez-moi de votre projet..."
+                        placeholder={langJSON.MainPage.ContactSection.contactFormMessagePlaceholder[lang]}
                         value={form.message}
                         onChange={handleChange}
                         disabled={status == "loading"}
@@ -109,7 +120,7 @@ const ContactForm = () => {
 
                 {status == "success" && (
                     <div className="p-3 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-500 text-sm">
-                        Votre message a bien été envoyé.
+                        {langJSON.MainPage.ContactSection.successMessage[lang]}
                     </div>
                 )}
 

@@ -2,8 +2,12 @@ import type { ProjectHeroProps } from "@/types"
 import { ProjectStack } from "@/components/common"
 import { LinkButton } from "@/components/Button"
 import { Calendar } from "lucide-react"
+import { useLanguage } from "@/contexts"
+import langJSON from "@/data/lang.json"
 
 const ProjectHero = ({ projet }: ProjectHeroProps) => {
+    const { lang } = useLanguage()
+    
     return (
         <div className="relative h-[80vh] flex flex-col justify-end">
             <div className="absolute inset-0">
@@ -26,7 +30,7 @@ const ProjectHero = ({ projet }: ProjectHeroProps) => {
                 </h1>
 
                 <p className="text-base md:text-lg lg:text-xl text-gray-400 max-w-2xl leading-relaxed mb-8">
-                    {projet.accroche.fr}
+                    {projet.accroche[lang]}
                 </p>
 
                 <div className="flex flex-wrap gap-2 mb-10">
@@ -37,10 +41,10 @@ const ProjectHero = ({ projet }: ProjectHeroProps) => {
 
                 <div className="flex gap-3 flex-wrap">
                     {projet.live &&
-                        <LinkButton title="Voir la démo" style="primary" action={() => { window.open(projet.live, "_blank") }} />
+                        <LinkButton title={langJSON.ProjectPage.deployButton[lang]} style="primary" action={() => { window.open(projet.live, "_blank") }} />
                     }
 
-                    <LinkButton title="Code source" style="secondary" action={() => { window.open(projet.github, "_blank") }} />
+                    <LinkButton title={langJSON.ProjectPage.githubButton[lang]} style="secondary" action={() => { window.open(projet.github, "_blank") }} />
                 </div>
             </div>
         </div>

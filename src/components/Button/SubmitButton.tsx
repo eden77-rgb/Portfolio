@@ -1,6 +1,10 @@
 import type { SubmitButtonProps } from '@/types';
+import langJSON from "@/data/lang.json"
+import { useLanguage } from "@/contexts"
 
 const SubmitButton = ({ action, isLoading, disabled }: SubmitButtonProps) => {
+    const { lang } = useLanguage()
+
     return (
         <button
             onClick={action}
@@ -18,7 +22,9 @@ const SubmitButton = ({ action, isLoading, disabled }: SubmitButtonProps) => {
                 )}
 
                 <span className="text-white font-medium">
-                    {isLoading ? "Envoi en cours..." : "Envoyer le message"}
+                    {isLoading ? 
+                        langJSON.MainPage.ContactSection.messageButtonLoading[lang] : 
+                        langJSON.MainPage.ContactSection.messageButton[lang]}
                 </span>
             </div>
 

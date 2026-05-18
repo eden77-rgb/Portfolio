@@ -4,8 +4,12 @@ import type { Project } from "@/types"
 import { ProjectDefis, ProjectFeatures, ProjectVideo, ProjectDescription, ProjectHero, ProjectImages } from "@/components/ProjectPage"
 import GoBackButton from "@/components/Button/GoBackButton"
 import { useEffect, useState } from "react"
+import { useLanguage } from "@/contexts"
+import langJSON from "@/data/lang.json"
 
 export function ProjectPage() {
+    const { lang } = useLanguage()
+    
     const { id } = useParams()
     const [showVideo, setShowVideo] = useState(false)
 
@@ -41,7 +45,7 @@ export function ProjectPage() {
         <div className="flex flex-col">
             <ProjectHero projet={project} />
 
-            <ProjectDescription description={project.description.fr} />
+            <ProjectDescription description={project.description[lang]} />
 
             {(showVideo && project.video) &&
                 <ProjectVideo video={project.video} />
@@ -55,7 +59,7 @@ export function ProjectPage() {
 
             <ProjectDefis defis={project.defis} />
 
-            <GoBackButton content="Retour à l'accueil" />
+            <GoBackButton content={langJSON.ProjectPage.goBackButton[lang]} />
         </div>
     )
 }

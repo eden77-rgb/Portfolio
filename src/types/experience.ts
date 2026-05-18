@@ -22,7 +22,7 @@ export type DateValue = Lang<string | number>
 
 export type DateRange = {
     start: DateValue,
-    end?: DateValue | 'Present'
+    end?: DateValue
 }
 
 export type Location = {
@@ -35,8 +35,8 @@ export type Task = {
 }
 
 export type Lang<T> = {
-    fr: T,
-    en: T
+    FR: T,
+    EN: T
 }
 
 export type Experience = {

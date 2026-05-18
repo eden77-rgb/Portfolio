@@ -1,7 +1,11 @@
 import type { ProjectImagesProps } from "@/types"
 import { useRef, type KeyboardEvent } from "react"
+import langJSON from "@/data/lang.json"
+import { useLanguage } from "@/contexts"
 
 const ProjectImages = ({ images }: ProjectImagesProps) => {
+    const { lang } = useLanguage()
+
     const sliderRef = useRef<HTMLDivElement>(null)
 
     const handleKeyDown = (event: KeyboardEvent) => {
@@ -28,7 +32,7 @@ const ProjectImages = ({ images }: ProjectImagesProps) => {
     return (
         <div className="px-12 md:px-20 lg:px-28 pb-16">
             <h2 className="text-2xl md:text-3xl font-bold text-lime-400 mb-6">
-                Galerie d'images
+                {langJSON.ProjectPage.imageTitle[lang]}
             </h2>
 
             {/* TODO: MaJ pour déplacer avec la souris */}

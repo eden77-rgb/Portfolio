@@ -15,14 +15,14 @@ export const experiences: Experience[] = [
         id: 1,
         type: "Formation",
         title: {
-            fr: "Bachelor Intelligence artificielle et Big Data",
-            en: "Bachelor in Artificial Intelligence and Big Data"
+            FR: "Bachelor Intelligence artificielle et Big Data",
+            EN: "Bachelor in Artificial Intelligence and Big Data"
         },
         company: "ESGI",
         date: {
             start: {
-                fr: "sept. 2026",
-                en: "Sept. 2026"
+                FR: "sept. 2026",
+                EN: "Sept. 2026"
             }
         },
         location: {
@@ -31,16 +31,16 @@ export const experiences: Experience[] = [
         },
         tasks: [
             {
-                fr: { content: "Développement de modèles d'intelligence artificielle et implémentation d'algorithmes de machine learning." },
-                en: { content: "Development of AI models and implementation of machine learning algorithms." }
+                FR: { content: "Développement de modèles d'intelligence artificielle et implémentation d'algorithmes de machine learning." },
+                EN: { content: "Development of AI models and implementation of machine learning algorithms." }
             },
             {
-                fr: { content: "Analyse et traitement de grandes quantités de données structurées et non structurées." },
-                en: { content: "Analysis and processing of large structured and unstructured datasets." }
+                FR: { content: "Analyse et traitement de grandes quantités de données structurées et non structurées." },
+                EN: { content: "Analysis and processing of large structured and unstructured datasets." }
             },
             {
-                fr: { content: "Mise en place de pipelines de données et optimisation des performances des systèmes Big Data." },
-                en: { content: "Building data pipelines and optimizing Big Data system performance." }
+                FR: { content: "Mise en place de pipelines de données et optimisation des performances des systèmes Big Data." },
+                EN: { content: "Building data pipelines and optimizing Big Data system performance." }
             }
         ],
         stacks: [
@@ -55,18 +55,18 @@ export const experiences: Experience[] = [
         id: 2,
         type: "Formation",
         title: {
-            fr: "Bachelor Conception de Données et Applications",
-            en: "Bachelor in Data and Application Design"
+            FR: "Bachelor Conception de Données et Applications",
+            EN: "Bachelor in Data and Application Design"
         },
         company: "ESTIAM",
         date: {
             start: {
-                fr: "2024",
-                en: "2024"
+                FR: "2024",
+                EN: "2024"
             },
             end: {
-                fr: "Présent",
-                en: "Present"
+                FR: "Présent",
+                EN: "Present"
             }
         },
         location: {
@@ -75,16 +75,16 @@ export const experiences: Experience[] = [
         },
         tasks: [
             {
-                fr: { content: "Conception d'architectures logicielles et modélisation de bases de données complexes." },
-                en: { content: "Design of software architectures and modeling of complex databases." }
+                FR: { content: "Conception d'architectures logicielles et modélisation de bases de données complexes." },
+                EN: { content: "Design of software architectures and modeling of complex databases." }
             },
             {
-                fr: { content: "Création d'API sécurisées et gestion optimisée des flux de données." },
-                en: { content: "Building secure APIs and optimizing data flow management." }
+                FR: { content: "Création d'API sécurisées et gestion optimisée des flux de données." },
+                EN: { content: "Building secure APIs and optimizing data flow management." }
             },
             {
-                fr: { content: "Développement d'interfaces dynamiques et intégration de frameworks modernes." },
-                en: { content: "Developing dynamic interfaces and integrating modern frameworks." }
+                FR: { content: "Développement d'interfaces dynamiques et intégration de frameworks modernes." },
+                EN: { content: "Developing dynamic interfaces and integrating modern frameworks." }
             }
         ],
         stacks: [
@@ -98,14 +98,14 @@ export const experiences: Experience[] = [
         id: 3,
         type: "Certification",
         title: {
-            fr: "Certificate of Competency in Basic Operations of Smart Logistics Facilities and Equipment",
-            en: "Certificate of Competency in Basic Operations of Smart Logistics Facilities and Equipment"
+            FR: "Certificate of Competency in Basic Operations of Smart Logistics Facilities and Equipment",
+            EN: "Certificate of Competency in Basic Operations of Smart Logistics Facilities and Equipment"
         },
         company: "Belt and Road International Skill Certfication Center (BRISCC)",
         date: {
             start: {
-                fr: "déc. 2025",
-                en: "Dec. 2025"
+                FR: "déc. 2025",
+                EN: "Dec. 2025"
             }
         },
         location: {
@@ -128,18 +128,18 @@ export const experiences: Experience[] = [
         id: 4,
         type: "Expérience Professionnelle",
         title: {
-            fr: "Stage Développeur Full Stack",
-            en: "Full Stack Developer Internship"
+            FR: "Stage Développeur Full Stack",
+            EN: "Full Stack Developer Internship"
         },
         company: "Eight Bamboos",
         date: {
             start: {
-                fr: "juil. 2025",
-                en: "Jul. 2025"
+                FR: "juil. 2025",
+                EN: "Jul. 2025"
             },
             end: {
-                fr: "août 2025",
-                en: "Aug. 2025"
+                FR: "août 2025",
+                EN: "Aug. 2025"
             }
         },
         location: {
@@ -148,16 +148,16 @@ export const experiences: Experience[] = [
         },
         tasks: [
             {
-                fr: { content: "Développement de la logique métier back-end en Python et gestion des interactions serveurs." },
-                en: { content: "Backend business logic development in Python and server-side interaction handling." }
+                FR: { content: "Développement de la logique métier back-end en Python et gestion des interactions serveurs." },
+                EN: { content: "Backend business logic development in Python and server-side interaction handling." }
             },
             {
-                fr: { content: "Conception d'interfaces utilisateur dynamiques et animations interactives avec JavaScript." },
-                en: { content: "Design of dynamic user interfaces and interactive animations with JavaScript." }
+                FR: { content: "Conception d'interfaces utilisateur dynamiques et animations interactives avec JavaScript." },
+                EN: { content: "Design of dynamic user interfaces and interactive animations with JavaScript." }
             },
             {
-                fr: { content: "Optimisation des performances et de l'expérience utilisateur au sein d'un environnement technique full-stack." },
-                en: { content: "Performance optimization and user experience improvements in a full-stack environment." }
+                FR: { content: "Optimisation des performances et de l'expérience utilisateur au sein d'un environnement technique full-stack." },
+                EN: { content: "Performance optimization and user experience improvements in a full-stack environment." }
             }
         ],
         stacks: [
@@ -168,14 +168,14 @@ export const experiences: Experience[] = [
         id: 5,
         type: "Formation",
         title: {
-            fr: "Hackathon Game Développeur Unity",
-            en: "Unity Game Developer Hackathon"
+            FR: "Hackathon Game Développeur Unity",
+            EN: "Unity Game Developer Hackathon"
         },
         company: "ESTIAM",
         date: {
             start: {
-                fr: "juin 2025",
-                en: "Jun. 2025"
+                FR: "juin 2025",
+                EN: "Jun. 2025"
             }
         },
         location: {
@@ -184,16 +184,16 @@ export const experiences: Experience[] = [
         },
         tasks: [
             {
-                fr: { content: "Conception et développement d'un jeu vidéo 3D fonctionnel en équipe sous contrainte de temps." },
-                en: { content: "Design and development of a functional 3D video game in a team under time constraints." }
+                FR: { content: "Conception et développement d'un jeu vidéo 3D fonctionnel en équipe sous contrainte de temps." },
+                EN: { content: "Design and development of a functional 3D video game in a team under time constraints." }
             },
             {
-                fr: { content: "Définition et implémentation du gameplay et des mécaniques de jeu autour d'une thématique imposée." },
-                en: { content: "Definition and implementation of gameplay and mechanics based on a given theme." }
+                FR: { content: "Définition et implémentation du gameplay et des mécaniques de jeu autour d'une thématique imposée." },
+                EN: { content: "Definition and implementation of gameplay and mechanics based on a given theme." }
             },
             {
-                fr: { content: "Collaboration agile pour assurer la livraison d'un prototype jouable lors de la compétition." },
-                en: { content: "Agile collaboration to deliver a playable prototype during the competition." }
+                FR: { content: "Collaboration agile pour assurer la livraison d'un prototype jouable lors de la compétition." },
+                EN: { content: "Agile collaboration to deliver a playable prototype during the competition." }
             }
         ],
         stacks: [
@@ -204,14 +204,14 @@ export const experiences: Experience[] = [
         id: 6,
         type: "Certification",
         title: {
-            fr: "CCNA: Enterprise Networking, Security, and Automation",
-            en: "CCNA: Enterprise Networking, Security, and Automation"
+            FR: "CCNA: Enterprise Networking, Security, and Automation",
+            EN: "CCNA: Enterprise Networking, Security, and Automation"
         },
         company: "Cisco",
         date: {
             start: {
-                fr: "fév. 2025",
-                en: "Feb. 2025"
+                FR: "fév. 2025",
+                EN: "Feb. 2025"
             }
         },
         location: {
