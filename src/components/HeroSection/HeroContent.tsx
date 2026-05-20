@@ -18,11 +18,11 @@ const HeroContent = () => {
                         </span>
                     </h1>
 
-                    <h2 className="text-2xl md:text-4xl lg:text-5xl font-light tracking-wider mb-6 text-gray-100 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+                    <h2 className="text-2xl md:text-4xl lg:text-5xl font-light tracking-wider mb-6 text-[rgb(var(--text-primary))] animate-fade-in" style={{ animationDelay: '0.2s' }}>
                         {langJSON.MainPage.HeroSection.jobTitle[lang]}
                     </h2>
 
-                    <p className="text-base md:text-lg lg:text-xl text-gray-400 max-w-2xl mx-auto mb-12 leading-relaxed animate-fade-in" style={{ animationDelay: '0.4s' }}>
+                    <p className="text-base md:text-lg lg:text-xl text-[rgb(var(--text-muted))] max-w-2xl mx-auto mb-12 leading-relaxed animate-fade-in" style={{ animationDelay: '0.4s' }}>
                         {langJSON.MainPage.HeroSection.jobDescription[lang]}
                     </p>
                 </div>

@@ -8,23 +8,23 @@ const ExperienceCard = ({ experience }: ExperienceCardProps) => {
     const { lang } = useLanguage()
     
     return (
-        <div className="bg-[#0a0a0a] border border-emerald-400/20 rounded-2xl p-6 hover:border-emerald-400/50 transition-all duration-300">
+        <div className="bg-[rgb(var(--bg-card))] border border-emerald-400/20 rounded-2xl p-6 hover:border-emerald-400/50 transition-all duration-300">
             <div className="mb-4">
                 <h3 className="text-xl font-bold text-emerald-400 mb-1">
                     {experience.title[lang]}
                 </h3>
 
-                <p className="text-white font-semibold">
+                <p className="text-[rgb(var(--text-primary))] font-semibold">
                     {experience.company}
                 </p>
 
                 <div className="flex flex-wrap gap-4 mt-2">
-                    <div className="flex items-center gap-1.5 text-gray-400 text-sm">
+                    <div className="flex items-center gap-1.5 text-[rgb(var(--text-muted))] text-sm">
                         <Calendar className="w-4 h-4" />
                         <span>{experience.date.start[lang]} {experience.date.end ? ` - ${experience.date.end[lang]}` : ""}</span>
                     </div>
 
-                    <div className="flex items-center gap-1.5 text-gray-400 text-sm">
+                    <div className="flex items-center gap-1.5 text-[rgb(var(--text-muted))] text-sm">
                         <MapPin className="w-4 h-4" />
                         <span>{experience.location.city}, {experience.location.country}</span>
                     </div>
@@ -34,7 +34,7 @@ const ExperienceCard = ({ experience }: ExperienceCardProps) => {
             {experience.tasks && (
                 <ul className="space-y-2 mb-5">
                     {experience.tasks.map((task, index) => (
-                        <li key={index} className="flex items-start gap-3 text-gray-300 text-sm leading-relaxed">
+                        <li key={index} className="flex items-start gap-3 text-[rgb(var(--text-secondary))] text-sm leading-relaxed">
                             <span className={`mt-2 w-1.5 h-1.5 rounded-full shrink-0 bg-emerald-400`} />
                             <span>{task[lang].content}</span>
                         </li>

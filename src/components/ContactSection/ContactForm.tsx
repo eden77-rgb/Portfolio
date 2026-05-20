@@ -67,14 +67,14 @@ const ContactForm = () => {
 
 
     return (
-        <div className="bg-zinc-900/60 border border-zinc-800 rounded-2xl p-8 flex flex-col gap-6 h-full">
-            <h3 className="text-xl font-bold text-white">
+        <div className="bg-[rgb(var(--bg-card))] border border-[rgb(var(--border)/0.12)] rounded-2xl p-8 flex flex-col gap-6 h-full">
+            <h3 className="text-xl font-bold text-[rgb(var(--text-primary))]">
                 {langJSON.MainPage.ContactSection.contactFormTitle[lang]}
             </h3>
 
             <div className="flex flex-col gap-5 flex-1">
                 <div className="flex flex-col gap-2">
-                    <label className="text-sm font-semibold text-zinc-300">
+                    <label className="text-sm font-semibold text-[rgb(var(--text-secondary))]">
                         {langJSON.MainPage.ContactSection.contactFormNameLabel[lang]}
                     </label>
                     <input
@@ -84,12 +84,12 @@ const ContactForm = () => {
                         value={form.name}
                         onChange={handleChange}
                         disabled={status == "loading"}
-                        className="bg-black/40 border border-zinc-800 rounded-xl px-4 py-3 text-sm text-zinc-200 placeholder:text-zinc-600 outline-none focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20 transition-all w-full"
+                        className="bg-[rgb(var(--bg-secondary))] border border-[rgb(var(--border)/0.12)] rounded-xl px-4 py-3 text-sm text-[rgb(var(--text-primary))] placeholder:text-[rgb(var(--text-faint))] outline-none focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20 transition-all w-full"
                     />
                 </div>
 
                 <div className="flex flex-col gap-2">
-                    <label className="text-sm font-semibold text-zinc-300">
+                    <label className="text-sm font-semibold text-[rgb(var(--text-secondary))]">
                         {langJSON.MainPage.ContactSection.contactFormEmailLabel[lang]}
                     </label>
                     <input
@@ -99,12 +99,12 @@ const ContactForm = () => {
                         value={form.email}
                         onChange={handleChange}
                         disabled={status == "loading"}
-                        className="bg-black/40 border border-zinc-800 rounded-xl px-4 py-3 text-sm text-zinc-200 placeholder:text-zinc-600 outline-none focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20 transition-all w-full"
+                        className="bg-[rgb(var(--bg-secondary))] border border-[rgb(var(--border)/0.12)] rounded-xl px-4 py-3 text-sm text-[rgb(var(--text-primary))] placeholder:text-[rgb(var(--text-faint))] outline-none focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20 transition-all w-full"
                     />
                 </div>
 
                 <div className="flex flex-col gap-2">
-                    <label className="text-sm font-semibold text-zinc-300">
+                    <label className="text-sm font-semibold text-[rgb(var(--text-secondary))]">
                         {langJSON.MainPage.ContactSection.contactFormMessageLabel[lang]}
                     </label>
                     <textarea
@@ -114,7 +114,7 @@ const ContactForm = () => {
                         onChange={handleChange}
                         disabled={status == "loading"}
                         rows={6}
-                        className="bg-black/40 border border-zinc-800 rounded-xl px-4 py-3 text-sm text-zinc-200 placeholder:text-zinc-600 outline-none focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20 transition-all w-full resize-none leading-relaxed"
+                        className="bg-[rgb(var(--bg-secondary))] border border-[rgb(var(--border)/0.12)] rounded-xl px-4 py-3 text-sm text-[rgb(var(--text-primary))] placeholder:text-[rgb(var(--text-faint))] outline-none focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20 transition-all w-full resize-none leading-relaxed"
                     />
                 </div>
 

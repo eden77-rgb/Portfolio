@@ -5,7 +5,7 @@ import { useLanguage } from "@/contexts"
 
 const ProjectsSection = ({ sections }: ProjectsProps) => {
     const { lang } = useLanguage()
-    
+
     const gridCols: Record<1 | 2 | 3 | 4, string> = {
         1: "lg:grid-cols-1",
         2: "lg:grid-cols-2",
@@ -14,7 +14,7 @@ const ProjectsSection = ({ sections }: ProjectsProps) => {
     }
 
     return (
-        <section id="projects" className="py-20 px-4 bg-black min-h-screen">
+        <section id="projects" className="py-20 px-4 min-h-screen">
             <div className="max-w-7xl mx-auto flex flex-col items-center">
                 {sections.map((section) => (
                     <div key={section.title[lang]} className="w-full mb-16">

@@ -21,7 +21,7 @@ const ExperiencesSection = ({ experiences }: ExperiencesSectionProps) => {
                     {langJSON.MainPage.ExperiencesSection.sectionTitle[lang]}
                 </h2>
 
-                <p className="text-gray-400 text-lg">
+                <p className="text-[rgb(var(--text-muted))] text-lg">
                     {langJSON.MainPage.ExperiencesSection.sectionDescription[lang]}
                 </p>
             </div>

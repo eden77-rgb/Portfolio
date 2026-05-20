@@ -29,7 +29,7 @@ const ProjectHero = ({ projet }: ProjectHeroProps) => {
                     {projet.title}
                 </h1>
 
-                <p className="text-base md:text-lg lg:text-xl text-gray-400 max-w-2xl leading-relaxed mb-8">
+                <p className="text-base md:text-lg lg:text-xl text-[rgb(var(--text-muted))] max-w-2xl leading-relaxed mb-8">
                     {projet.accroche[lang]}
                 </p>
 

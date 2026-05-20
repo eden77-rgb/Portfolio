@@ -13,9 +13,9 @@ const ProjectDefi = ({ defis }: ProjectDefisProps) => {
 
             <ul className="grid grid-cols-1 gap-4">
                 {defis.map((defi) => (
-                    <li className="flex items-center gap-4 px-6 py-4 rounded-xl border border-teal-500/10 bg-linear-to-br from-teal-900/10 to-zinc-900/40 w-full">
+                    <li className="flex items-center gap-4 px-6 py-4 rounded-xl border border-teal-500/10 bg-linear-to-br from-teal-500/8 to-[rgb(var(--bg-secondary)/0.4)] w-full">
                         <span className="w-2 h-2 rounded-full bg-teal-500 shadow-[0_0_10px_rgba(16,185,129,0.5)] shrink-0" />
-                        <span className="text-zinc-300 text-base md:text-lg font-medium">
+                        <span className="text-[rgb(var(--text-secondary))] text-base md:text-lg font-medium">
                             {defi[lang].content}
                         </span>
                     </li>

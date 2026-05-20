@@ -11,7 +11,7 @@ const Footer = () => {
                         <a
                             href="https://github.com/eden77-rgb/"
                             target='_blank'
-                            className="text-gray-400 hover:text-emerald-400 transition-all hover:scale-110"
+                            className="text-[rgb(var(--text-muted))] hover:text-emerald-400 transition-all hover:scale-110"
                             aria-label="GitHub"
                         >
                             <Github size={22} />
@@ -20,7 +20,7 @@ const Footer = () => {
                         <a
                             href="https://www.linkedin.com/in/eden-vandewatyne/"
                             target='_blank'
-                            className="text-gray-400 hover:text-emerald-400 transition-all hover:scale-110"
+                            className="text-[rgb(var(--text-muted))] hover:text-emerald-400 transition-all hover:scale-110"
                             aria-label="LinkedIn"
                         >
                             <Linkedin size={22} />
@@ -29,14 +29,14 @@ const Footer = () => {
                         <a
                             href="mailto:eden.vandewatyne11@gmail.com"
                             target='_blank'
-                            className="text-gray-400 hover:text-emerald-500 transition-colors duration-300"
+                            className="text-[rgb(var(--text-muted))] hover:text-emerald-500 transition-colors duration-300"
                         >
                             <Mail size={24} />
                         </a>
                     </div>
 
-                    <div className="text-gray-500 text-sm tracking-wide">
-                        <p>&copy; 2026 <span className="text-gray-300">Eden Vandewatyne</span>. All rights reserved.</p>
+                    <div className="text-[rgb(var(--text-muted))] text-sm tracking-wide">
+                        <p>&copy; 2026 <span className="text-[rgb(var(--text-primary))]">Eden Vandewatyne</span>. All rights reserved.</p>
                     </div>
                 </div>
             </div>

@@ -5,11 +5,11 @@ import { useLanguage } from "@/contexts";
 
 const ProjectCard = ({ projet }: ProjectCardProps) => {
     const { lang } = useLanguage()
-    
+
     return (
         <Link to={`/project/${projet.id}`} className="h-full">
-            <div className="h-full flex flex-col bg-[#0a0a0a] border border-gray-800 rounded-2xl overflow-hidden hover:border-emerald-500/50 transition-colors duration-300 group">
-                <div className="aspect-video w-full overflow-hidden bg-gray-900">
+            <div className="h-full flex flex-col bg-[rgb(var(--bg-card))] border border-[rgb(var(--border)/0.15)] rounded-2xl overflow-hidden hover:border-emerald-500/50 transition-colors duration-300 group">
+                <div className="aspect-video w-full overflow-hidden bg-[rgb(var(--bg-secondary))]">
                     <img
                         src={projet.thumbnail.path}
                         alt={projet.thumbnail.path ? projet.thumbnail.path : ""}
@@ -18,10 +18,10 @@ const ProjectCard = ({ projet }: ProjectCardProps) => {
                 </div>
 
                 <div className="p-6">
-                    <h2 className="text-2xl font-bold text-white mb-3 group-hover:text-emerald-400 transition-colors">
+                    <h2 className="text-2xl font-bold text-[rgb(var(--text-primary))] mb-3 group-hover:text-emerald-400 transition-colors">
                         {projet.title}
                     </h2>
-                    <p className="text-gray-400 mb-6 line-clamp-2">
+                    <p className="text-[rgb(var(--text-muted))] mb-6 line-clamp-2">
                         {projet.accroche[lang].length > 100 ? projet.accroche[lang].slice(0, 100) + "..." : projet.accroche[lang]}
                     </p>
 

@@ -11,7 +11,7 @@ const ProjectDescription = ({ description }: ProjectDescriptionProps) => {
                 {langJSON.ProjectPage.aboutTitle[lang]}
             </h2>
             
-            <p className="text-base md:text-lg text-gray-400 leading-relaxed">
+            <p className="text-base md:text-lg text-[rgb(var(--text-muted))] leading-relaxed">
                 {description}
             </p>
         </div>

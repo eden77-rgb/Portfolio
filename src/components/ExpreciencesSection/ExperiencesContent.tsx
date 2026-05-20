@@ -19,7 +19,7 @@ const ExperiencesContent = ({ experiences }: ExperiencesContentProps) => {
                 {experiences.map((experience, index) => (
                     <div key={index} className={`relative flex items-start ${index % 2 === 0 ? 'md:flex-row-reverse' : 'md:flex-row'}`}>
 
-                        <div className="absolute left-8 md:left-1/2 -translate-x-1/2 z-10 w-12 h-12 rounded-full bg-[#0a0a0a] border-2 border-emerald-400/40 flex items-center justify-center">
+                        <div className="absolute left-8 md:left-1/2 -translate-x-1/2 z-10 w-12 h-12 rounded-full bg-[rgb(var(--bg-card))] border-2 border-emerald-400/40 flex items-center justify-center">
                             {
                                 experience.type == "Formation" ? (
                                     <GraduationCap className="w-7 h-7 text-teal-400" />

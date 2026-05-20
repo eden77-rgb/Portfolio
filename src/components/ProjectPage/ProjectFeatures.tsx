@@ -13,9 +13,9 @@ const ProjectFeatures = ({ features }: ProjectFeaturesProps) => {
 
             <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {features.map((feature) => (
-                    <li className="flex items-center gap-4 px-6 py-4 rounded-xl border border-emerald-500/10 bg-linear-to-br from-emerald-900/10 to-zinc-900/40 md:[&:last-child:nth-child(odd)]:col-span-2 md:[&:last-child:nth-child(odd)]:justify-center">
+                    <li className="flex items-center gap-4 px-6 py-4 rounded-xl border border-emerald-500/10 bg-linear-to-br from-emerald-500/8 to-[rgb(var(--bg-secondary)/0.4)] md:[&:last-child:nth-child(odd)]:col-span-2 md:[&:last-child:nth-child(odd)]:justify-center">
                         <span className="w-2 h-2 rounded-full bg-emerald-500 shadow-[0_0_10px_rgba(16,185,129,0.5)] shrink-0" />
-                        <span className="text-zinc-300 text-base md:text-lg font-medium">
+                        <span className="text-[rgb(var(--text-secondary))] text-base md:text-lg font-medium">
                             {feature[lang].content}
                         </span>
                     </li>

@@ -14,7 +14,7 @@ const ProjectVideo = ({ video }: ProjectVideoProps) => {
                 {langJSON.ProjectPage.videoTitle[lang]}
             </h2>
 
-            <div className="relative aspect-video rounded-2xl overflow-hidden border border-teal-500/20 bg-linear-to-br from-teal-900/20 to-gray-900/40">
+            <div className="relative aspect-video rounded-2xl overflow-hidden border border-teal-500/20 bg-linear-to-br from-teal-500/10 to-[rgb(var(--bg-secondary)/0.4)]">
                 <video
                     src={videoUrl}
                     title={video.alt ? video.alt : ""}
