@@ -60,6 +60,15 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+*,
+*::before,
+*::after {
+    transition:
+        background-color 400ms ease,
+        border-color 400ms ease,
+        color 400ms ease;
+}
+
 @layer utilities {
 
     /* ── Scrollbar ── */
