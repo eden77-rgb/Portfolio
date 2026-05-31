@@ -2,6 +2,8 @@ import type { Experience } from "@/types/experience";
 
 /*
 *
+*   ESGI --> sept 2026
+*   CS50P --> juin 2026
 *   ESTIAM --> 2024 - Present
 *   BRISCC --> déc 2025
 *   Stage --> juil/aout 2025
@@ -53,6 +55,30 @@ export const experiences: Experience[] = [
     },
     {
         id: 2,
+        type: "Certification",
+        title: {
+            FR: "CS50’s Introduction to Programming with Python (CS50P)",
+            EN: "CS50’s Introduction to Programming with Python (CS50P)"
+        },
+        company: "Harvard University",
+        date: {
+            start: {
+                FR: "juin 2026",
+                EN: "Jun. 2026"
+            }
+        },
+        location: {
+            city: "Cambridge, Massachusetts (Online)",
+            country: "United States"
+        },
+        stacks: [
+            "Python", "Databases", "Data", "Computer Science"
+        ],
+        link: "https://cs50.harvard.edu/certificates/2dc61248-9239-4b14-bf3f-b2498095e459",
+        download: { path: "" }
+    },
+    {
+        id: 3,
         type: "Formation",
         title: {
             FR: "Bachelor Conception de Données et Applications",
@@ -95,7 +121,7 @@ export const experiences: Experience[] = [
         ]
     },
     {
-        id: 3,
+        id: 4,
         type: "Certification",
         title: {
             FR: "Certificate of Competency in Basic Operations of Smart Logistics Facilities and Equipment",
@@ -125,7 +151,7 @@ export const experiences: Experience[] = [
         download: { path: "" }
     },
     {
-        id: 4,
+        id: 5,
         type: "Expérience Professionnelle",
         title: {
             FR: "Stage Développeur Full Stack",
@@ -165,7 +191,7 @@ export const experiences: Experience[] = [
         ]
     },
     {
-        id: 5,
+        id: 6,
         type: "Formation",
         title: {
             FR: "Hackathon Game Développeur Unity",
@@ -201,7 +227,7 @@ export const experiences: Experience[] = [
         ]
     },
     {
-        id: 6,
+        id: 7,
         type: "Certification",
         title: {
             FR: "CCNA: Enterprise Networking, Security, and Automation",

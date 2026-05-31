@@ -71,3 +71,6 @@ export type Stack =
   | "ASP.NET Core Web API"
   | "Blazor"
   | "Microsoft SQL Server"
+  | "Databases"
+  | "Data"
+  | "Computer Science"
