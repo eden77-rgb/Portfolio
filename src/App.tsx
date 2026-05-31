@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
 import { MainPage, ProjectPage } from "./pages"
-import { Navbar, ScrollProgress } from "@/components/Layouts/"
+import { Navbar, ScrollProgress } from "@/components/Layouts"
 import { LanguageProvider } from "./contexts"
 
 
@@ -8,8 +8,10 @@ function App() {
     return (
         <LanguageProvider>
             <BrowserRouter>
-                <Navbar />
-                <ScrollProgress />
+                <header>
+                    <Navbar />
+                    <ScrollProgress />
+                </header>
 
                 <Routes>
                     <Route path="/" element={<MainPage />} />
