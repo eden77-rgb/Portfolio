@@ -1,173 +1,157 @@
 {
+    "NavBar": {
+        "DownloadPanel": {
+            "title": {
+                "FR": "Télécharger",
+                "EN": "Download"
+            },
+            "description": {
+                "FR": "Choisissez le format souhaité",
+                "EN": "Choose the desired format"
+            },
+            "footer": {
+                "FR": "PDF · Dernière mise à jour Juin 2026",
+                "EN": "PDF · Last update June 2026"
+            }
+        }
+    },
     "MainPage": {
         "HeroSection": {
             "jobTitle": {
                 "FR": "Développeur Full Stack & IA",
                 "EN": "Full Stack & AI Developer"
             },
-
             "jobDescription": {
                 "FR": "Conception d'applications élégantes performantes modernes et innovantes. Passionné par le design interactif et le développement innovant et polyvalent agile",
                 "EN": "Designing elegant, high-performance, modern, and innovative applications. Passionate about interactive design, as well as innovative, versatile, and agile development."
             },
-
             "projectButton": {
                 "FR": "Mes projets",
                 "EN": "View my work"
             },
-
             "contactButton": {
                 "FR": "Me contacter",
                 "EN": "Get in touch"
             }
         },
-
         "ExperiencesSection": {
             "sectionTitle": {
                 "FR": "Parcours Professionnel",
                 "EN": "Professional Experience"
             },
-
             "sectionDescription": {
                 "FR": "Expérience, Formation et Certifications",
                 "EN": "Experience, Education & Certifications"
             },
-
             "certificationsButton": {
                 "FR": "Voir la certification",
                 "EN": "View the certification"
             },
-
             "telechargementButton": {
                 "FR": "Télécharger",
                 "EN": "Download"
             }
         },
-
         "ContactSection": {
             "sectionTitle": {
                 "FR": "Travaillons ensemble",
                 "EN": "Let's Work Together"
             },
-
             "sectionDescription": {
                 "FR": "Un projet en tête ? Créons quelque chose d'incroyable ensemble.",
                 "EN": "Have a project in mind? Let's create something amazing together."
             },
-
             "contactInfoTitle": {
                 "FR": "Me contacter",
                 "EN": "Get In Touch"
             },
-
             "contactInfoDescription": {
                 "FR": "Me suivre sur",
                 "EN": "Follow me on"
             },
-
             "contactFormTitle": {
                 "FR": "Envoyer un message",
                 "EN": "Send a Message"
             },
-
             "contactFormNameLabel": {
                 "FR": "Nom",
                 "EN": "Name"
             },
-
             "contactFormNamePlaceholder": {
                 "FR": "Votre nom",
                 "EN": "Your name"
             },
-
             "contactFormEmailLabel": {
                 "FR": "Email",
                 "EN": "Email"
             },
-
             "contactFormEmailPlaceholder": {
                 "FR": "votre.email@exemple.com",
                 "EN": "your.email@exemple.com"
             },
-
             "contactFormMessageLabel": {
                 "FR": "Message",
                 "EN": "Message"
             },
-
             "contactFormMessagePlaceholder": {
                 "FR": "Parlez-moi de votre projet...",
                 "EN": "Tell me about your project..."
             },
-
             "messageButton": {
                 "FR": "Envoyer le message",
                 "EN": "Send the message"
             },
-
             "messageButtonLoading": {
                 "FR": "Envoi en cours...",
                 "EN": "Sending..."
             },
-
             "missingErrorMessage": {
                 "FR": "Veuillez remplir tous les champs.",
                 "EN": "Please fill in all the fields."
             },
-
             "duringErrorMessage": {
                 "FR": "Une erreur est survenue",
                 "EN": "An error has occurred"
             },
-
             "unableErrorMessage": {
                 "FR": "Impossible d'envoyer le message.",
                 "EN": "Unable to send the message."
             },
-
             "successMessage": {
                 "FR": "Votre message a bien été envoyé.",
                 "EN": "Your message has been sent."
             }
         }
     },
-
     "ProjectPage": {
         "deployButton": {
             "FR": "Voir la démo",
             "EN": "Watch the demo"
         },
-
         "githubButton": {
             "FR": "Code source",
             "EN": "Source code"
         },
-
         "aboutTitle": {
             "FR": "À propos du projet",
             "EN": "About the project"
         },
-
         "videoTitle": {
             "FR": "Démonstration vidéo",
             "EN": "Video demonstration"
         },
-
         "imageTitle": {
             "FR": "Galerie d'images",
             "EN": "Image Gallery"
         },
-
         "featureTitle": {
             "FR": "Fonctionnalités principales",
             "EN": "Key Features"
         },
-
         "defiTitle": {
             "FR": "Défis techniques",
             "EN": "Technical challenges"
         },
-
         "goBackButton": {
             "FR": "Retour à l'accueil",
             "EN": "Go back to home"

@@ -73,3 +73,9 @@ export type ExperiencesContentProps = {
 export type ExperienceCardProps = {
     experience: Experience
 }
+
+export type DownloadPanelProps = {
+    open: boolean;
+    onClose: () => void;
+    triggerRef: React.RefObject<HTMLButtonElement | null>
+}
