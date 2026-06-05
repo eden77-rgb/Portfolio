@@ -7,5 +7,6 @@ export type Item = {
     badge: string,
     label: Lang<string>,
     sub: Lang<string>,
+    filePath: string,
     onClick: () => void
 }
