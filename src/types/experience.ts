@@ -49,5 +49,5 @@ export type Experience = {
     tasks?: Lang<Task>[],
     stacks?: Stack[],
     link?: string,
-    download?: { path: string }
+    download?: { path: string, filename: string }
 }

@@ -75,7 +75,10 @@ export const experiences: Experience[] = [
             "Python", "Databases", "Data", "Computer Science"
         ],
         link: "https://cs50.harvard.edu/certificates/2dc61248-9239-4b14-bf3f-b2498095e459",
-        download: { path: "" }
+        download: { 
+            path: "/certifications/certification-cs50p-eden-vandewatyne.pdf", 
+            filename: "certification-cs50p-eden-vandewatyne"
+        }
     },
     {
         id: 3,
@@ -148,7 +151,10 @@ export const experiences: Experience[] = [
             "AI Industrial Basics"
         ],
         link: "https://www.linkedin.com/posts/eden-vandewatyne_nouvelle-certification-obtenue-jai-le-activity-7414367317444407296-9T94?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFew-x0Bb8wkrAs-mjH5q7S_fX630Sj5UGY",
-        download: { path: "" }
+        download: { 
+            path: "/certifications/certification-briscc-eden-vandewatyne.pdf", 
+            filename: "certification-briscc-eden-vandewatyne"
+        }
     },
     {
         id: 5,
@@ -258,6 +264,9 @@ export const experiences: Experience[] = [
             "Azure"
         ],
         link: "https://www.credly.com/badges/c568c878-94ab-4a7b-8cf9-563e2b99100e/public_url",
-        download: { path: "" }
+        download: { 
+            path: "/certifications/certification-ccna-eden-vandewatyne.pdf", 
+            filename: "certification-ccna-eden-vandewatyne"
+        }
     },
 ] 

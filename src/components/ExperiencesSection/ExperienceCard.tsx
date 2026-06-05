@@ -57,7 +57,7 @@ const ExperienceCard = ({ experience }: ExperienceCardProps) => {
                     )}
 
                     {experience.download && (
-                        <DownloadButton path={experience.download.path} />
+                        <DownloadButton path={experience.download.path} filename={experience.download.filename} />
                     )}
                 </div>
             )}

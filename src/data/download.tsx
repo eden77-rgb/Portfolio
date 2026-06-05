@@ -1,3 +1,4 @@
+import downloadFile from "@/utils/downloadFile";
 import type { Item } from "@/types/download";
 
 const FILENAME_FR = "cv_eden_vandewatyne.pdf"
@@ -19,25 +20,7 @@ export const download: Item[] = [
             EN: "PDF · Updated June 2026"
         },
         filePath: CV_FR_PATH,
-        onClick: () => {
-            fetch(`/api/download?filePath=${encodeURIComponent(CV_FR_PATH)}`)
-                .then((response) => response.blob())
-                .then((blob) => {
-                    const url = window.URL.createObjectURL(blob)
-
-                    const link = document.createElement('a')
-                    link.href = url
-                    link.setAttribute(
-                        'download',
-                        `${FILENAME_FR}`,
-                    )
-
-                    document.body.appendChild(link)
-
-                    link.click()
-                    link.parentNode?.removeChild(link)
-                })
-        },
+        onClick: () => downloadFile(CV_FR_PATH, FILENAME_FR)
     },
     {
         key: 'en',
@@ -51,24 +34,6 @@ export const download: Item[] = [
             EN: "PDF · Updated June 2026"
         },
         filePath: CV_EN_PATH,
-        onClick: () => {
-            fetch(`/api/download?filePath=${encodeURIComponent(CV_EN_PATH)}`)
-                .then((response) => response.blob())
-                .then((blob) => {
-                    const url = window.URL.createObjectURL(blob)
-
-                    const link = document.createElement('a')
-                    link.href = url
-                    link.setAttribute(
-                        'download',
-                        `${FILENAME_EN}`,
-                    )
-
-                    document.body.appendChild(link)
-
-                    link.click()
-                    link.parentNode?.removeChild(link)
-                })
-        },
+        onClick: () => downloadFile(CV_EN_PATH, FILENAME_EN)
     }
 ];

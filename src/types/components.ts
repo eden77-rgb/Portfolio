@@ -12,7 +12,8 @@ export type ExternalButtonProps = {
 }
 
 export type DownloadButtonProps = {
-    path: string
+    path: string,
+    filename: string
 }
 
 export type SubmitButtonProps = {
