@@ -1,5 +1,6 @@
 import type { ShareItem } from "@/types/share";
 import { Link2, Linkedin, X } from "lucide-react";
+import copy from "copy-to-clipboard";
 
 const LINKEDIN_POST = `🚀 Ravi de partager le portfolio de @Eden Vandewatyne !
 
@@ -35,7 +36,7 @@ export const share: ShareItem[] = [
             FR: "https://eden-vandewatyne.com/",
             EN: "https://eden-vandewatyne.com/"
         },
-        onClick: async () => { await navigator.clipboard.writeText("https://eden-vandewatyne.com/") },
+        onClick: () => { copy("https://eden-vandewatyne.com/") },
     },
     {
         key: "Linkedin",
