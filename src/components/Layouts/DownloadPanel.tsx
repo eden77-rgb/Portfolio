@@ -1,7 +1,7 @@
 import { Download, FileText } from "lucide-react";
 import { useEffect, useRef } from "react";
 import { download } from "@/data/download"
-import type { Item } from "@/types/download";
+import type { DownloadItem } from "@/types/download";
 import langJSON from "@/data/lang.json"
 import { useLanguage } from "@/contexts";
 import type { DownloadPanelProps } from "@/types";
@@ -45,7 +45,7 @@ const DownloadPanel = ({ open, onClose, triggerRef }: DownloadPanelProps) => {
             <div className={`mx-4 border-t border-[rgb(var(--border)/0.05)]`} />
 
             <div className="p-3 space-y-1">
-                {download.map(({ key, badge, label, sub, onClick }: Item) => {
+                {download.map(({ key, badge, label, sub, onClick }: DownloadItem) => {
                     return (
                         <button
                             key={key}
@@ -77,7 +77,7 @@ const DownloadPanel = ({ open, onClose, triggerRef }: DownloadPanelProps) => {
             </div>
 
             <div className="px-5 pb-4 pt-1">
-                <p className={`text-[10px] text-center text-gray-400`}>
+                <p className={`text-[10px] text-center text-[rgb(var(--text-muted))]`}>
                     {langJSON.NavBar.DownloadPanel.footer[lang]}
                 </p>
             </div>

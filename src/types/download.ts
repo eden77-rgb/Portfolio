@@ -2,7 +2,8 @@ type Lang<T> = {
     FR: T,
     EN: T
 }
-export type Item = {
+
+export type DownloadItem = {
     key: string,
     badge: string,
     label: Lang<string>,

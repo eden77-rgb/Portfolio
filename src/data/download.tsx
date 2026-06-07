@@ -1,5 +1,5 @@
 import downloadFile from "@/utils/downloadFile";
-import type { Item } from "@/types/download";
+import type { DownloadItem } from "@/types/download";
 
 const FILENAME_FR = "cv_eden_vandewatyne.pdf"
 const FILENAME_EN = "cv_eden_vandewatyne-en.pdf"
@@ -7,7 +7,7 @@ const FILENAME_EN = "cv_eden_vandewatyne-en.pdf"
 const CV_FR_PATH = `/cv/${FILENAME_FR}`
 const CV_EN_PATH = `/cv/${FILENAME_EN}`
 
-export const download: Item[] = [
+export const download: DownloadItem[] = [
     {
         key: 'fr',
         badge: 'FR',

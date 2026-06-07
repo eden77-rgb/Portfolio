@@ -13,6 +13,29 @@
                 "FR": "PDF · Dernière mise à jour Juin 2026",
                 "EN": "PDF · Last update June 2026"
             }
+        },
+
+        "SharePanel": {
+            "title": {
+                "FR": "Partager le portfolio",
+                "EN": "Share the portfolio"
+            },
+            "description": {
+                "FR": "Scannez ou choisissez une option",
+                "EN": "Scan or choose an option"
+            },
+            "export": {
+                "FR": "Exporter en PNG",
+                "EN": "Export as PNG"
+            },
+            "scan": {
+                "FR": "Scanner pour ouvrir sur mobile · Cliquer pour exporter",
+                "EN": "Scan to open on mobile · Click to export"
+            },
+            "footer":{
+                "FR": "Le lien pointe vers ce portfolio",
+                "EN": "The link points to this portfolio"
+            }
         }
     },
     "MainPage": {

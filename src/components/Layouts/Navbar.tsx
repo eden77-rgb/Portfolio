@@ -2,12 +2,15 @@ import { useLanguage } from "@/contexts"
 import { Download, Languages, Moon, Share2, Sun } from "lucide-react"
 import { useEffect, useRef, useState } from "react"
 import DownloadPanel from "./DownloadPanel"
+import { SharePanel } from "./SharePanel"
 
 const NavBar = () => {
     const { lang, setLang } = useLanguage()
     const [isDark, setIsDark] = useState(true)
     const [downloadOpen, setDownloadOpen] = useState(false)
+    const [shareOpen, setShareOpen] = useState(false)
     const downloadButtonRef = useRef<HTMLButtonElement>(null)
+    const shareButtonRef = useRef<HTMLButtonElement>(null)
 
     // useEffect(() => { console.log("[DEBUG]: lang: ", lang) }, [lang])
 
@@ -71,7 +74,8 @@ const NavBar = () => {
                 </button>
 
                 <button
-                    onClick={() => { }}
+                    ref={shareButtonRef}
+                    onClick={() => setShareOpen(prev => !prev)}
                     className="flex items-center justify-center w-10 h-10 bg-[rgb(var(--bg-card)/0.8)] backdrop-blur-lg border border-lime-500/20 rounded-full hover:border-lime-500/40 hover:bg-lime-500/10 transition-all group"
                     aria-label="Share portfolio"
                 >
@@ -80,6 +84,7 @@ const NavBar = () => {
             </nav>
 
             <DownloadPanel open={downloadOpen} onClose={() => setDownloadOpen(false)} triggerRef={downloadButtonRef} />
+            <SharePanel open={shareOpen} onClose={() => setShareOpen(false)} triggerRef={shareButtonRef} />
         </>
     )
 }
