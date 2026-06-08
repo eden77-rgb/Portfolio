@@ -59,7 +59,7 @@ export function ProjectPage() {
 
             <ProjectDefis defis={project.defis} />
 
-            <GoBackButton content={langJSON.ProjectPage.goBackButton[lang]} />
+            <GoBackButton content={langJSON.ProjectPage.goBackButton[lang]} variant="secondary" />
         </div>
     )
 }
