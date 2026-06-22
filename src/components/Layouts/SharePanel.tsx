@@ -96,7 +96,7 @@ export function SharePanel({ open, onClose, triggerRef }: SharePanelProps) {
                     <div className={`p-3 border transition-colors duration-200 rounded-xl bg-[rgb(var(--bg-card))] border-[rgb(var(--lime)/0.2)] group-hover:[rgb(var(--lime)/0.5)]`}>
                         <QRCodeCanvas
                             ref={qrRef}
-                            value={""}
+                            value={"https://eden-vandewatyne.com/"}
                             size={148}
                             bgColor={`rgb(${bgColor})`}
                             fgColor='#84cc16'
