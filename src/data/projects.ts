@@ -153,15 +153,22 @@ export const projects: ProjetBySection = [
                     EN: `Development of an interactive application combining a C# front-end and a Python back-end. The project currently focuses on front-back communication via REST API, as well as progressive integration of AI models (Ollama) for content processing and generation. This work explores user interaction challenges, modular architecture, data flow management, and the design of a scalable system connecting a rich user interface to AI services.`
                 },
                 date: 2026,
-                state: "Bientot",
-                github: "https://github.com/eden77-rgb/Innovation-Project",
+                state: "En cours",
+                github: "https://github.com/eden77-rgb/G.E.R.A.R.D",
                 stacks: [
                     "Python",
                     "FastAPI",
-                    "Ollama"
+                    "Ollama",
+                    "C#",
+                    ".NET 10",
+                    "WPF",
                 ],
                 thumbnail: { path: "/assets/gerard/thumbnail.png", alt: "Aucune image disponible" },
-                images: [],
+                images: [
+                    { path: "/assets/gerard/thumbnail.png", alt: "Page d'accueil" },
+                    { path: "/assets/gerard/1.png", alt: "Image de l'application" },
+                    { path: "/assets/gerard/2.png", alt: "Image de l'application" },
+                ],
                 features: [
                     {
                         FR: { content: "Communication front-end / back-end via API REST." },

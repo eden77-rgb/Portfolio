@@ -74,3 +74,4 @@ export type Stack =
   | "Databases"
   | "Data"
   | "Computer Science"
+  | "WPF"
