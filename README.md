@@ -1,69 +1,33 @@
-# React + TypeScript + Vite
+# 💼 Mon Portfolio
+Bienvenue sur mon espace de projets ! Je suis développeur, passionné par la **Data**, l'**Intelligence Artificielle** et le **développement d'applications robustes** (Python, Java, JavaScript, écosystèmes .NET).
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Ce dépôt centralise mes réalisations majeures, de la conception d'architectures de données à l'intégration d'IA locales.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Projets à la Une
+| Projet | Stack principale | Description | Lien |
+| :--- | :--- | :--- | :---: |
+| **🗡️ Zelda Fan Project** | `Python`, `Pygame`, `PyTMX`, `PyScroll`, `Tiled` | Jeu d'aventure 2D rendant hommage à la licence mythique, développé de zéro. | [Voir le projet ↗](https://github.com/eden77-rgb/Zelda) |
+| **🧠 G.E.R.A.R.D** | `.NET 10 (WPF)`, `Python`, `FastAPI`, `Ollama` | Assistant IA local intelligent et ergonomique accessible par raccourci global. | [Voir le projet ↗](https://github.com/eden77-rgb/GERARD) |
+| **🌐 PageWeaver** | `JavaScript`, `Groq API`, `Cloudflare`, `KV Namespace` | Génération de pages personnalisées à partir d'URL avec système de templates | [Voir le projet ↗](https://github.com/eden77-rgb/PageWeaver) |
+| **⛏️ Mod Minecraft** | `Java`, `Minecraft Forge` | Création d'un mode Minecraft qui ajoute le ruby et des crafts personnalisés | [Voir le projet ↗](https://github.com/eden77-rgb/MinecraftMod) |
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🧰 Compétences Globales
+### 🛠️ Data & Back-end
+- **Langages** : Python, SQL Java, TypeScript, C#
+- **Frameworks / Libs** : FastAPI, WPF, Blazor, Pandas, SQLAlchemy
+- **Data Engineering** : Pipelines ETL, Bases de données relationnelles (PostgreSQL), Modélisation dimensionnelle (Schéma en étoile)
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### ⚙️ DevOps & Visualisation
+- **DevOps** : Docker (Conteneurisation), Git / GitHub (Gestion de version propre)
+- **Business Intelligence** : Power BI, Excel avancé (Dashboards décisionnels)
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🧑‍💻 Me Contacter
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- **LinkedIn** : [@eden-vandewatyne](https://www.linkedin.com/in/eden-vandewatyne/)
+- **Email** : eden.vandewatyne11@gmail.com
