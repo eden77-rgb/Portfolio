@@ -9,7 +9,7 @@ Bienvenue sur mon espace de projets ! Je suis développeur, passionné par la **
 | Projet | Stack principale | Description | Lien |
 | :--- | :--- | :--- | :---: |
 | **🗡️ Zelda Fan Project** | `Python`, `Pygame`, `PyTMX`, `PyScroll`, `Tiled` | Jeu d'aventure 2D rendant hommage à la licence mythique, développé de zéro. | [Voir le projet ↗](https://github.com/eden77-rgb/Zelda) |
-| **🧠 G.E.R.A.R.D** | `.NET 10 (WPF)`, `Python`, `FastAPI`, `Ollama` | Assistant IA local intelligent et ergonomique accessible par raccourci global. | [Voir le projet ↗](https://github.com/eden77-rgb/GERARD) |
+| **🧠 G.E.R.A.R.D** | `.NET 10 (WPF)`, `Python`, `FastAPI`, `Ollama` | Assistant IA local intelligent et ergonomique accessible par raccourci global. | [Voir le projet ↗](https://github.com/eden77-rgb/G.E.R.A.R.D) |
 | **🌐 PageWeaver** | `JavaScript`, `Groq API`, `Cloudflare`, `KV Namespace` | Génération de pages personnalisées à partir d'URL avec système de templates | [Voir le projet ↗](https://github.com/eden77-rgb/PageWeaver) |
 | **⛏️ Mod Minecraft** | `Java`, `Minecraft Forge` | Création d'un mode Minecraft qui ajoute le ruby et des crafts personnalisés | [Voir le projet ↗](https://github.com/eden77-rgb/MinecraftMod) |
 
