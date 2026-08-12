@@ -19,7 +19,7 @@ const ProjectHero = ({ projet }: ProjectHeroProps) => {
                 <div className="absolute inset-0 bg-linear-to-b from-black/20 via-black/60 to-black/95" />
             </div>
 
-            <div className="relative z-10 px-6 md:px-20 lg:px-28 pb-16 pt-32">
+            <div className="relative z-10 px-12 md:px-20 lg:px-28 pb-16 pt-32">
                 <div className="flex items-center gap-2 text-emerald-400 text-sm font-medium mb-6">
                     <Calendar size={14} />
                     <p>{projet.date}</p>
@@ -29,7 +29,7 @@ const ProjectHero = ({ projet }: ProjectHeroProps) => {
                     {projet.title}
                 </h1>
 
-                <p className="text-base md:text-lg lg:text-xl text-[rgb(var(--text-muted))] max-w-2xl leading-relaxed mb-8">
+                <p className="text-base md:text-lg lg:text-xl text-[rgb(var(--text-muted))] leading-relaxed mb-8">
                     {projet.accroche[lang]}
                 </p>
 
