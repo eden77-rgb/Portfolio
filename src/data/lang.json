@@ -1,10 +1,9 @@
 {
     "NavBar": {
-        "ShowBack" : {
+        "ShowBack": {
             "FR": "Retour",
             "EN": "Back"
         },
-
         "DownloadPanel": {
             "title": {
                 "FR": "Télécharger",
@@ -19,7 +18,6 @@
                 "EN": "PDF · Last update June 2026"
             }
         },
-
         "SharePanel": {
             "title": {
                 "FR": "Partager le portfolio",
@@ -37,7 +35,7 @@
                 "FR": "Scanner pour ouvrir sur mobile · Cliquer pour exporter",
                 "EN": "Scan to open on mobile · Click to export"
             },
-            "footer":{
+            "footer": {
                 "FR": "Le lien pointe vers ce portfolio",
                 "EN": "The link points to this portfolio"
             }
@@ -46,12 +44,12 @@
     "MainPage": {
         "HeroSection": {
             "jobTitle": {
-                "FR": "Développeur Full Stack & IA",
-                "EN": "Full Stack & AI Developer"
+                "FR": "Data Engineer & IA",
+                "EN": "Data Engineer & AI"
             },
             "jobDescription": {
-                "FR": "Conception d'applications élégantes performantes modernes et innovantes. Passionné par le design interactif et le développement innovant et polyvalent agile",
-                "EN": "Designing elegant, high-performance, modern, and innovative applications. Passionate about interactive design, as well as innovative, versatile, and agile development."
+                "FR": "Conception d'architectures de données robustes, performantes et scalables. Passionné par l'ingénierie des flux et l'intelligence artificielle au service de l'impact.",
+                "EN": "Design of robust, high-performance, and scalable data architectures. Passionate about data pipeline engineering and artificial intelligence for impact."
             },
             "projectButton": {
                 "FR": "Mes projets",
