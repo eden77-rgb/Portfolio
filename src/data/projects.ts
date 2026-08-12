@@ -3,8 +3,8 @@ import type { ProjetBySection } from "@/types";
 export const projects: ProjetBySection = [
     {
         title: {
-            FR: "Data",
-            EN: "Data"
+            FR: "Data Engineering & IA",
+            EN: "Data Engineering & AI"
         },
         projects: [
             { // FinanceETL
@@ -169,7 +169,7 @@ export const projects: ProjetBySection = [
     {
         title: {
             FR: "Développement",
-            EN: "Développement"
+            EN: "Development"
         },
         projects: [
             { // Zelda
